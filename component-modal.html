@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Modal</div>
+        <div class="right"></div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+
+        <div class="section full mt-2">
+            <div class="wide-block pt-2 pb-2">
+                You can use modal for all kinds of action.
+            </div>
+        </div>
+
+        <div class="section full mt-3">
+            <div class="section-title">Basic Modal</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Basic modal example</p>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalBasic">Open Modal</button>
+            </div>
+        </div>
+
+        <!-- Modal Basic -->
+        <div class="modal fade modalbox" id="ModalBasic" data-backdrop="static" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <a href="javascript:;" data-dismiss="modal">Close</a>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum, urna eget finibus
+                            fermentum, velit metus maximus erat, nec sodales elit justo vitae sapien. Sed fermentum
+                            varius erat, et dictum lorem. Cras pulvinar vestibulum purus sed hendrerit. Praesent et
+                            auctor dolor. Ut sed ultrices justo. Fusce tortor erat, scelerisque sit amet diam rhoncus,
+                            cursus dictum lorem. Ut vitae arcu egestas, congue nulla at, gravida purus.
+                        </p>
+                        <p>
+                            Donec in justo urna. Fusce pretium quam sed viverra blandit. Vivamus a facilisis lectus.
+                            Nunc non aliquet nulla. Aenean arcu metus, dictum tincidunt lacinia quis, efficitur vitae
+                            dui. Integer id nisi sit amet leo rutrum placerat in ac tortor. Duis sed fermentum mi, ut
+                            vulputate ligula.
+                        </p>
+                        <p>
+                            Vivamus eget sodales elit, cursus scelerisque leo. Suspendisse lorem leo, sollicitudin
+                            egestas interdum sit amet, sollicitudin tristique ex. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos. Phasellus id ultricies eros. Praesent
+                            vulputate interdum dapibus. Duis varius faucibus metus, eget sagittis purus consectetur in.
+                            Praesent fringilla tristique sapien, et maximus tellus dapibus a. Quisque nec magna dapibus
+                            sapien iaculis consectetur. Fusce in vehicula arcu. Aliquam erat volutpat. Class aptent
+                            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Modal Basic -->
+
+
+
+        <div class="section full mt-3">
+            <div class="section-title">Form Modal</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Modal with form</p>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalForm">Open Modal</button>
+            </div>
+        </div>
+
+        <!-- Modal Form -->
+        <div class="modal fade modalbox" id="ModalForm" data-backdrop="static" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Form Modal Example</h5>
+                        <a href="javascript:;" data-dismiss="modal">Close</a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-form">
+                            <div class="section mt-2">
+                                <h1>Get started</h1>
+                                <h4>Fill the form to log in</h4>
+                            </div>
+                            <div class="section mt-4 mb-5">
+                                <form>
+                                    <div class="form-group basic">
+                                        <div class="input-wrapper">
+                                            <label class="label" for="email1">E-mail</label>
+                                            <input type="email" class="form-control" id="email1"
+                                                placeholder="Your e-mail">
+                                            <i class="clear-input">
+                                                <ion-icon name="close-circle"></ion-icon>
+                                            </i>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group basic">
+                                        <div class="input-wrapper">
+                                            <label class="label" for="password1">Password</label>
+                                            <input type="password" class="form-control" id="password1"
+                                                placeholder="Your password">
+                                            <i class="clear-input">
+                                                <ion-icon name="close-circle"></ion-icon>
+                                            </i>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-links mt-2">
+                                        <div>
+                                            <a href="#">Register Now</a>
+                                        </div>
+                                        <div><a href="#" class="text-muted">Forgot Password?</a></div>
+                                    </div>
+                                    
+                                    <div class="mt-2">
+                                        <button type="button" class="btn btn-primary btn-block btn-lg"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Modal Form -->
+
+
+
+        <div class="section full mt-3">
+            <div class="section-title">Listview Modal</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Listview modal example</p>
+                <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#ModalListview">Open Modal</button>
+            </div>
+        </div>
+
+        <!-- Modal Listview -->
+        <div class="modal fade modalbox" id="ModalListview" data-backdrop="static" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Listview Modal Example</h5>
+                        <a href="javascript:;" data-dismiss="modal">Close</a>
+                    </div>
+                    <div class="modal-body p-0">
+
+                        <ul class="listview image-listview flush mb-2">
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Frank Boehm</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Sophie Asveld</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Rickie Baroch</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar4.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Carmelita Marsham</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Isaac Hunt</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar6.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Gabriel Moreira</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Nicolina Lindholm</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar8.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Emmalynn Mazzia</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar9.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Regina Pollastro</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Tania Pearson</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Frank Boehm</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Sophie Asveld</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Rickie Baroch</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar4.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Carmelita Marsham</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Isaac Hunt</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar6.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Gabriel Moreira</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Nicolina Lindholm</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar8.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Emmalynn Mazzia</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar9.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Regina Pollastro</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                    <div class="in">
+                                        <div>Tania Pearson</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Modal Listview -->
+
+
+        <div class="section full mt-3 mb-3">
+            <div class="section-title">Checkbox Modal</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Checkbox modal example</p>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalCheckbox">Open Modal</button>
+            </div>
+        </div>
+
+        <!-- Modal Checkbox -->
+        <div class="modal fade modalbox" id="ModalCheckbox" data-backdrop="static" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Please Select</h5>
+                        <a href="javascript:;" data-dismiss="modal">Close</a>
+                    </div>
+                    <div class="modal-body p-0">
+
+                        <div class="input-list">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Apple</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                <label class="custom-control-label" for="customCheck5">Orange</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                <label class="custom-control-label" for="customCheck6">Banana</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                <label class="custom-control-label" for="customCheck7">Mango</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                <label class="custom-control-label" for="customCheck8">Melon</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                <label class="custom-control-label" for="customCheck9">Grape</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                <label class="custom-control-label" for="customCheck10">Pineapple</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Modal Checkbox -->
+
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="javascript:;" class="item" data-toggle="modal" data-target="#sidebarPanel">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                        </div>
+                        <div class="in">
+                            <strong>Julian Gruber</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                California
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Discover
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-components.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Components
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Pages</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Chat</div>
+                                    <span class="badge badge-danger">5</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="listview-title mt-2 mb-1">
+                        <span>Friends</span>
+                    </div>
+                    <ul class="listview image-listview flush transparent no-line">
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sophie Asveld</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sebastian Bennett</div>
+                                    <span class="badge badge-danger">6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Beth Murphy</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Amelia Cabal</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Henry Doe</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- sidebar buttons -->
+                <div class="sidebar-buttons">
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="archive-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+.toast-box{
+  position: fixed;
+  left: 0;
+  top: -100%;
+  right: 0;
+  width: 100%;
+  z-index: 600;
+  min-height: 52px;
+  margin-top: $safeTop;
+  transition: 0.2s all;
+  background: #2b3543;
+  font-size: $fontSizeSub;
+  color: rgba(255,255,255,.75);
+  padding: 10px 16px;
+  line-height: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .toast-title{
+      font-size: $fontSize;
+      color: #FFF;
+  }
+  .btn{
+      font-size: $fontSizeSub;
+      font-weight: $medium;
+  }
+  &.show {
+    top: 0;
+  }
+  .in {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 20px;
+    i.icon,
+    ion-icon{
+        font-size: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        color: #FFF;
+    }
+    .text{
+        width: 100%;
+    }
+  }
+  &.toast-top {
+    &.show {
+      top: 56px;
+    }
+  }
+  &.toast-bottom {
+    top: auto;
+    bottom: -100%;
+    &.show {
+      bottom: 56px;
+      top: auto;
+      margin-bottom: $safeBottom;
+    }
+  }
+  &.toast-center {
+    width: auto;
+    left: auto;
+    right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 16px 24px;
+    border-radius: $borderRadius;
+    text-align: center;
+    &.show {
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+    .in{
+        padding: 0;
+        display: block;
+        i.icon,
+        ion-icon{
+            margin: 0 0 10px 0;
+            font-size: 64px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+    .btn{
+        margin-top: 20px;
+    }
+  }
+}
+.extra-header-active{
+  .toast-box{
+    &.toast-top {
+      &.show {
+        top: 95px;
+      }
+    }
+  }
+}

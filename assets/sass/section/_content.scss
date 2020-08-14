@@ -1,0 +1,77 @@
+#appCapsule {
+  padding: 56px 0;
+  margin-bottom: $safeBottom;
+  margin-top: $safeTop;
+  &.extra-header-active{
+    padding-top: 112px;
+  }
+  &.full-height{
+    min-height: 100vh;
+  }
+}
+.section {
+  padding: 0 16px;
+  &.full {
+    padding: 0;
+  }
+}
+.wide-block {
+  background: #fff;
+  border-top: 1px solid $colorLine;
+  border-bottom: 1px solid $colorLine;
+  padding-left: 16px;
+  padding-right: 16px;
+  &.transparent{
+    background: transparent !important;
+  }
+}
+.section-title {
+  font-size: $fontSize;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:  $colorHeading;
+  font-weight: $medium;
+  &.large{
+      font-size: $fontSizeHeadingLarge;
+      line-height: 1.2em;
+      font-weight: $bold;
+  }
+  &.medium{
+    font-size: $fontSizeHeading;
+    font-weight: $bold;
+  }
+}
+.content-header,
+.content-footer {
+  font-size: $fontSizeCaption;
+  color: $colorLight;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 1.4em;
+}
+.section.full {
+  .section-title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .content-header,
+  .content-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .wide-block {
+    .content-header,
+    .content-footer {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.section.inset {
+  .wide-block {
+    border: 1px solid $colorLine;
+    border-radius: $borderRadius;
+  }
+}

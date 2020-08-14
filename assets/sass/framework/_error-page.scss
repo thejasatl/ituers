@@ -1,0 +1,36 @@
+.error-page{
+    text-align: center;
+    padding: 40px 16px;
+    max-width: 300px;
+    margin: auto;
+    .icon-box{
+        font-size: 86px;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: $fontSizeHeadingLarge;
+        margin-bottom: 20px;
+    }
+}
+#countDown{
+    font-size: 20px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: $colorHeading;
+    margin: 0 -40px;
+    > div{
+        display: inline-block;
+        width: 70px;
+        border: 1px solid $colorLine;
+        margin: 5px;
+        text-align: center;
+        border-radius: $borderRadius;
+        padding: 10px 5px;
+        span{
+            display: block;
+            font-weight: $regular;
+            color: $colorLight;
+            font-size: 10px;
+        }
+    }
+}

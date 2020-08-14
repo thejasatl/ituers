@@ -1,0 +1,97 @@
+.nav-tabs {
+  width: 100%;
+}
+.nav-tabs.style1 {
+  border: 0;
+  background: rgba($colorLine, 0.4);
+  border-radius: $borderRadius;
+  display: flex;
+  .nav-item {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    .nav-link {
+      color: $colorText;
+      font-weight: $medium;
+      font-size: $fontSizeSub;
+      border: 0 !important;
+      line-height: 1.2em;
+      width: 100%;
+      border-radius: $borderRadius;
+      padding: 6px 10px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 4px !important;
+      i.icon,
+      ion-icon {
+        margin-right: 8px;
+        margin-left: 8px;
+        line-height: 1em;
+        font-size: 18px;
+      }
+      &.active {
+        color: $colorHeading;
+        box-shadow: $boxShadow;
+      }
+    }
+  }
+}
+
+.nav-tabs.lined {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  display: flex;
+  .nav-item {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    .nav-link {
+      color: $colorText;
+      font-weight: $medium;
+      font-size: $fontSizeSub;
+      border: 0 !important;
+      border-bottom: 2px solid transparent !important;
+      line-height: 1.2em;
+      width: 100%;
+      border-radius: 0;
+      padding: 6px 10px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important;
+      border-bottom-color: 2px solid;
+      i.icon,
+      ion-icon{
+        margin-right: 8px;
+        margin-left: 8px;
+        line-height: 1em;
+        font-size: 18px;
+      }
+      &.active {
+        color: $colorPrimary;
+        background: transparent;
+        border-bottom-color: $colorPrimary !important;
+      }
+    }
+  }
+}
+.nav-tabs.iconed{
+  i.icon,
+  ion-icon{
+    font-size: 24px !important;
+  }
+}

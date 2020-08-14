@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////
+// ------ C O L O R S ------------------------------
+////////////////////////////////////////////////////
+// Theme Colors
+$colorPrimary:         #1E74FD;
+$colorSecondary:       #6C7C94;
+$colorSuccess:         #34C759;
+$colorDanger:          #EC4433;
+$colorWarning:         #FE9500;
+$colorInfo:            #592BCA;
+// Background
+$colorBackground:      #F9F9F9;
+// Line Colors
+$colorLine:            #E1E1E1;
+// Text Colors
+$colorHeading:         #141515;
+$colorText:            #4F5050;
+$colorLight:           #A1A1A2;
+
+// Dark Mode Colors
+$darkModeBackground:        #0c1624;
+$darkModeContentBackground: #0F1C2F;
+$darkModeColorHeading:      #FFFFFF;
+$darkModeColorText:         #8195a6;
+$darkModeColorLight:        #586d7f;
+$darkModeColorLine:         #1B283B;
+
+////////////////////////////////////////////////////
+// ------ FONT ------------------------------
+////////////////////////////////////////////////////
+// Google font
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap');
+
+// Font Family
+$fontFamily:             'Inter', sans-serif;
+// Define font weight
+$regular :               400; // font regular
+$medium :                500; // font medium (if font does not support medium, define the semibold)
+$bold :                  700; // font bold or black
+// Typography
+$lineHeight:             1.55rem;
+$letterSpacing:          -0.015rem;
+// Sizes
+$fontSizeHeadingXLarge:  34px;
+$fontSizeHeadingLarge:   24px;
+$fontSizeHeading:        17px;
+$fontSize:               15px;
+$fontSizeSub:            13px;
+$fontSizeCaption:        11px;
+
+////////////////////////////////////////////////////
+// ------ OTHERS -----------------------------------
+////////////////////////////////////////////////////
+$borderRadius:           6px;
+$boxShadow :             0 3px 6px 0 rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.08);

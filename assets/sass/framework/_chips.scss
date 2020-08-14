@@ -1,0 +1,146 @@
+.chip {
+  background: $colorLine;
+  font-size: 13px;
+  color: $colorHeading;
+  line-height: 1em;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 100px;
+  .chip-label {
+    padding: 0 12px;
+  }
+  &.chip-outline {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px $colorLine;
+  }
+  &.chip-media {
+    position: relative;
+    padding-left: 20px;
+    img {
+      width: 26px;
+      height: 26px;
+      border-radius: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .chip-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: $colorText;
+    color: #fff;
+    font-size: 14px;
+  }
+  .chip-delete {
+    width: 26px;
+    margin-left: -10px;
+    height: 26px;
+    display: inline-flex;
+    color: $colorHeading;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 100px;
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+.chip-primary {
+  background: $colorPrimary !important;
+  color: #fff !important;
+  .chip-delete {
+    color: #fff !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: $colorPrimary !important;
+    box-shadow: inset 0 0 0 1px $colorPrimary !important;
+  }
+}
+.chip-danger {
+  background: $colorDanger !important;
+  color: #fff !important;
+  .chip-delete {
+    color: #fff !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: $colorDanger !important;
+    box-shadow: inset 0 0 0 1px $colorDanger !important;
+  }
+}
+.chip-success {
+  background: $colorSuccess !important;
+  color: #fff !important;
+  .chip-delete {
+    color: #fff !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: $colorSuccess !important;
+    box-shadow: inset 0 0 0 1px $colorSuccess !important;
+  }
+}
+.chip-warning {
+  background: $colorWarning !important;
+  color: #fff !important;
+  .chip-delete {
+    color: #fff !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: $colorWarning !important;
+    box-shadow: inset 0 0 0 1px $colorWarning !important;
+  }
+}
+.chip-info {
+  background: $colorInfo !important;
+  color: #fff !important;
+  .chip-delete {
+    color: #fff !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: $colorInfo !important;
+    box-shadow: inset 0 0 0 1px $colorInfo !important;
+  }
+}
+.chip-light {
+  background: #fff !important;
+  color: #000 !important;
+  .chip-delete {
+    color: #000 !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: #fff !important;
+    box-shadow: inset 0 0 0 1px #fff !important;
+  }
+}
+.chip-dark {
+  background: #000 !important;
+  color: #fff !important;
+  .chip-delete {
+    color: #fff !important;
+  }
+  &.chip-outline {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: inset 0 0 0 1px #000 !important;
+  }
+}

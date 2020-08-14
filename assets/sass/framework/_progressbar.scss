@@ -1,0 +1,44 @@
+.progress{
+    height: 14px;
+    border-radius: $borderRadius;
+}
+.progress-bar{
+    background: $colorPrimary;
+    height: 14px;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: $medium;
+    letter-spacing: 0;
+}
+.circle-progress{
+    position: relative;
+    width: 100%;
+    .in{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text{
+            text-align: center;
+            font-size: $fontSizeCaption;
+            line-height: 1.5em;
+            .value{
+                margin: 0;
+                line-height: 1.5em;
+            }
+        }
+    }
+    canvas{
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+}

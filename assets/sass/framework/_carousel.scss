@@ -1,0 +1,53 @@
+.carousel-slider{
+    text-align: center;
+    .owl-dots{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+        outline: 0 !important;
+        button{
+            outline: 0 !important;
+        }
+    }
+    .imaged.w-100{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.carousel-button-footer{
+    min-height: 84px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: $safeBottom;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 990;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    > div{
+        width: 100%;
+    }
+}
+.carousel-multiple{
+    width: calc(100% + 16px);
+    margin-left: -16px;
+}
+.carousel-single{
+    width: calc(100% + 16px);
+    margin-left: -16px;
+}
+.carousel-small{
+    width: calc(100% + 16px);
+    margin-left: -16px;
+}
+
+.owl-carousel .owl-stage-outer{
+    padding-bottom: 20px; 
+    margin-bottom: -20px;
+}

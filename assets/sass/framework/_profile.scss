@@ -1,0 +1,50 @@
+.profile-head{
+    display: flex;
+    align-items: center;
+    .avatar{
+        margin-right: 16px;
+    }
+    .in{
+        .name{
+            margin: 0 0 5px 0;
+            font-weight: 500;
+        }
+        .subtext{
+            color: $colorLight;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+.profile-info{
+    font-size: $fontSizeSub;
+    line-height: 1.5em;
+    .bio{
+        color: $colorText;
+    }
+    .link{
+        margin-top: 4px;
+        color: $colorPrimary;
+    }
+}
+.profile-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item{
+        font-size: $fontSizeCaption;
+        line-height: 1.6em;
+        padding: 5px;
+        color: $colorText;
+        text-align: center;
+        &:last-child{
+            border-right-color: transparent;
+        }
+        strong{
+            display: block;
+            line-height: 1.4em;
+            color: $colorHeading;
+            font-size: $fontSizeHeading;
+        }
+    }
+}

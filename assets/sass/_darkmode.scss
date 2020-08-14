@@ -1,0 +1,932 @@
+body.dark-mode-active {
+  background: $darkModeBackground !important;
+  color: $darkModeColorText;
+  &.bg-light,
+  &.bg-white {
+    background: $darkModeBackground !important;
+  }
+  #loader {
+    background: $darkModeBackground;
+  }
+  select option {
+    background: $darkModeBackground;
+    color: #fff;
+  }
+  .text-muted {
+    color: $darkModeColorLight !important;
+  }
+  .bg-dark {
+    background: #000 !important;
+  }
+  .bg-light {
+    background: #fff !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $darkModeColorHeading;
+    small {
+      color: $darkModeColorText;
+    }
+  }
+  .lead {
+    color: $darkModeColorLight !important;
+  }
+  // app header
+  .appHeader {
+    background: $darkModeContentBackground;
+    border-bottom-color: $darkModeColorLine;
+    .pageTitle {
+      color: $darkModeColorHeading;
+    }
+    &.transparent {
+      background: transparent !important;
+    }
+    &.bg-light {
+      .pageTitle {
+        color: $colorHeading;
+      }
+    }
+    .left,
+    .right {
+      .headerButton {
+        color: $darkModeColorHeading;
+      }
+    }
+  }
+  .extraHeader {
+    background: $darkModeContentBackground;
+    border-bottom-color: $darkModeColorLine;
+  }
+  .appHeader.scrolled {
+    background: transparent;
+    border-bottom-color: transparent;
+    &.is-active {
+      background: $darkModeContentBackground;
+      border-bottom-color: $darkModeColorLine;
+    }
+  }
+
+  .section-title {
+    color: $darkModeColorText;
+  }
+  .section {
+    .wide-block {
+      background: $darkModeContentBackground;
+      border-top-color: $darkModeColorLine;
+      border-bottom-color: $darkModeColorLine;
+    }
+    .content-header,
+    .content-footer {
+      color: $darkModeColorLight;
+    }
+    &.inset {
+      .wide-block {
+        border-color: $darkModeColorLine;
+      }
+    }
+  }
+
+  .header-large-title {
+    .title {
+      color: $darkModeColorHeading;
+    }
+    .subtitle {
+      color: $darkModeColorHeading !important;
+    }
+  }
+
+  .appBottomMenu {
+    background: $darkModeContentBackground;
+    border-top-color: $darkModeColorLine;
+    .item {
+      i.icon,
+      ion-icon,
+      strong {
+        color: $darkModeColorHeading;
+      }
+      &:hover {
+        i.icon,
+        ion-icon,
+        strong {
+          color: $darkModeColorHeading;
+        }
+      }
+    }
+    &.bg-light {
+      .item {
+        i.icon,
+        ion-icon,
+        strong {
+          color: $colorHeading;
+        }
+        &:hover {
+          i.icon,
+          ion-icon,
+          strong {
+            color: $colorHeading;
+          }
+        }
+      }
+    }
+  }
+  .accordion {
+    background: $darkModeContentBackground;
+    border-top-color: $darkModeColorLine;
+    border-bottom-color: $darkModeColorLine;
+    .accordion-header {
+      .btn {
+        color: $darkModeColorHeading;
+        &:active {
+          background: rgba($darkModeColorLine, 0.2) !important;
+        }
+        &.collapsed:before {
+          background: $darkModeColorLine;
+        }
+      }
+    }
+  }
+  .inset .accordion {
+    border-color: $darkModeColorLine;
+  }
+
+  .action-sheet {
+    .modal-content {
+      background: $darkModeContentBackground;
+      .modal-header {
+        border-bottom-color: $darkModeColorLine;
+        .modal-title {
+          color: $darkModeColorHeading !important;
+        }
+      }
+    }
+  }
+  .action-button-list {
+    > li {
+      .btn {
+        color: $darkModeColorHeading;
+        &:active,
+        &.active {
+          background: rgba($darkModeColorLine, 0.3) !important;
+        }
+      }
+    }
+    .action-divider {
+      background: $darkModeColorLine;
+    }
+  }
+
+  .listview.transparent {
+    background: transparent !important;
+  }
+  .listview-title {
+    color: $darkModeColorText;
+    .link {
+      color: $darkModeColorLight;
+    }
+  }
+  .listview {
+    color: $darkModeColorHeading;
+    background-color: $darkModeContentBackground !important;
+    border-top-color: $darkModeColorLine;
+    border-bottom-color: $darkModeColorLine;
+    .text-muted {
+      color: $darkModeColorLight !important;
+    }
+    > li {
+      &:after {
+        background: $darkModeColorLine;
+      }
+      header,
+      footer {
+        color: $darkModeColorText;
+      }
+    }
+    > li.divider-title {
+      background: rgba(0, 0, 0, 0.1);
+      color: $darkModeColorText;
+      border-top-color: $darkModeColorLine;
+      border-bottom-color: $darkModeColorLine;
+    }
+  }
+  .link-listview {
+    > li {
+      a {
+        color: $darkModeColorHeading !important;
+        &:after {
+          background-image: url("data:image/svg+xml,%0A%3Csvg width='10px' height='16px' viewBox='0 0 10 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Listview' transform='translate(-112.000000, -120.000000)' stroke='#{svg-bg-color($darkModeColorLight)}' stroke-width='2.178'%3E%3Cpolyline id='Path' points='114 122 120 128 114 134'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        &:active {
+          background: rgba($darkModeColorLine, 0.3);
+        }
+      }
+    }
+  }
+  .image-listview {
+    > li {
+      a.item {
+        color: $darkModeColorHeading !important;
+        &:active {
+          background: rgba($darkModeColorLine, 0.3);
+        }
+        &:after {
+          background-image: url("data:image/svg+xml,%0A%3Csvg width='10px' height='16px' viewBox='0 0 10 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Listview' transform='translate(-112.000000, -120.000000)' stroke='#{svg-bg-color($darkModeColorLight)}' stroke-width='2.178'%3E%3Cpolyline id='Path' points='114 122 120 128 114 134'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+      }
+    }
+    &.media {
+      > li {
+        border-bottom: 1px solid $darkModeColorLine;
+      }
+    }
+  }
+
+  .btn-light {
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+    &:hover,
+    &:active {
+      background: #fff !important;
+      color: #000 !important;
+      border-color: #fff !important;
+      opacity: 0.8;
+    }
+  }
+  .btn-dark {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+    &:hover,
+    &:active {
+      background: #000 !important;
+      color: #fff !important;
+      border-color: #000 !important;
+      opacity: 0.6;
+    }
+  }
+  .btn-outline-light {
+    border-color: #fff !important;
+    color: #fff !important;
+    &:hover,
+    &:active {
+      color: #fff !important;
+      border-color: #fff !important;
+    }
+  }
+  .btn-outline-dark {
+    border-color: #000 !important;
+    color: #000 !important;
+    &:hover,
+    &:active {
+      color: #000 !important;
+      border-color: #000 !important;
+      background: rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+
+  .card {
+    background: $darkModeContentBackground;
+    .card-title {
+      color: $darkModeColorHeading;
+    }
+    .card-subtitle {
+      color: $darkModeColorHeading;
+    }
+    .card-header {
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+      color: $darkModeColorHeading;
+    }
+    .card-footer {
+      border-top-color: rgba(255, 255, 255, 0.1);
+      color: $darkModeColorText;
+    }
+    .text-muted {
+      color: $darkModeColorLight !important;
+    }
+    &.bg-light {
+      color: $colorText;
+      .card-title {
+        color: $colorHeading;
+      }
+      .card-subtitle {
+        color: $colorHeading;
+      }
+      .card-header {
+        color: #000;
+        border-bottom-color: $colorLine;
+      }
+    }
+  }
+  .blockquote-footer {
+    color: $darkModeColorText;
+  }
+
+  .custom-control {
+    .custom-control-label {
+      color: $darkModeColorHeading;
+      &:before {
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.15) !important;
+      }
+      &:active {
+        &:before {
+          background: transparent !important;
+          border-color: $darkModeColorLine !important;
+        }
+      }
+    }
+  }
+
+  .input-list {
+    .custom-control {
+      &:after {
+        background: $darkModeColorLine;
+      }
+    }
+    .custom-control-label {
+      &:active {
+        background: rgba($darkModeColorLine, 0.3);
+      }
+    }
+  }
+
+  .chip {
+    background: $darkModeColorLine;
+    color: $darkModeColorHeading;
+    &.chip-outline {
+      box-shadow: inset 0 0 0 1px $darkModeColorLine;
+      background: transparent;
+    }
+    .chip-icon {
+      background: $darkModeColorText;
+      color: #fff;
+    }
+    .chip-delete {
+      color: $darkModeColorHeading;
+    }
+  }
+  .comment-block {
+    .item {
+      .text {
+        color: $darkModeColorText;
+      }
+      .comment-header {
+        .title {
+          color: $darkModeColorHeading;
+        }
+        .time {
+          color: $darkModeColorLight;
+        }
+      }
+      .comment-footer {
+        .comment-button {
+          color: $darkModeColorText !important;
+        }
+      }
+    }
+  }
+
+  .dialogbox {
+    .modal-dialog {
+      .modal-content {
+        background: $darkModeContentBackground;
+        color: $darkModeColorText;
+        .btn-list {
+          .btn {
+            border-bottom-color: $darkModeColorLine !important;
+            color: $darkModeColorHeading;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+              background: rgba($darkModeColorLine, 0.3) !important;
+            }
+          }
+        }
+        .btn-inline {
+          .btn {
+            color: $darkModeColorHeading;
+            border-right-color: $darkModeColorLine !important;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+              background: rgba($darkModeColorLine, 0.3) !important;
+            }
+          }
+        }
+        .modal-header {
+          .modal-title {
+            color: $darkModeColorHeading;
+          }
+        }
+        .modal-footer {
+          border-top-color: $darkModeColorLine;
+        }
+      }
+    }
+  }
+  .divider {
+    background: $darkModeColorLine;
+    .icon-box {
+      background: $darkModeColorLine;
+    }
+  }
+
+  .dropdown,
+  .dropup {
+    .dropdown-menu {
+      background: $darkModeBackground;
+      border: 1px solid $darkModeColorLine;
+      .dropdown-item {
+        color: $darkModeColorHeading;
+        &:hover,
+        &:active {
+          background: rgba($darkModeColorLine, 0.5) !important;
+          color: $darkModeColorHeading;
+        }
+      }
+      .dropdown-divider {
+        border-top-color: $darkModeColorLine !important;
+      }
+      .dropdown-header {
+        color: $darkModeColorText;
+      }
+      .text {
+        color: $darkModeColorText;
+      }
+      i.icon,
+      ion-icon {
+        color: $darkModeColorHeading;
+      }
+    }
+  }
+
+  .error-page {
+    .title {
+      color: $darkModeColorHeading;
+    }
+  }
+  .fixed-footer {
+    background: $darkModeBackground;
+  }
+
+  .fab-button {
+    .dropdown-menu {
+      background: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .form-wizard-section {
+    &:before {
+      background: $darkModeColorLine;
+    }
+    .button-item {
+      strong {
+        background: $darkModeColorLine;
+        color: $darkModeColorLight;
+      }
+      p {
+        color: $darkModeColorLight;
+      }
+      &.active {
+        strong {
+          background: $colorPrimary;
+          color: #fff;
+        }
+        p {
+          color: $darkModeColorHeading;
+        }
+      }
+    }
+  }
+  .exampleBox {
+    border-color: $darkModeColorLine;
+    background: rgba($darkModeColorLine, 0.3);
+  }
+  .form-group {
+    .label {
+      color: $darkModeColorHeading;
+    }
+    .input-info {
+      color: $darkModeColorLight;
+    }
+    .clear-input {
+      color: $darkModeColorLight;
+    }
+  }
+  .form-group.basic {
+    .form-control,
+    .custom-select {
+      border-bottom-color: $darkModeColorLine;
+      color: $darkModeColorHeading;
+    }
+  }
+  .form-group.boxed {
+    .form-control,
+    .custom-select {
+      color: $darkModeColorHeading;
+      background: $darkModeColorLine;
+      border-color: $darkModeColorLine;
+    }
+  }
+  .input-group {
+    .input-group-text {
+      border-bottom-color: $darkModeColorLine;
+      color: $darkModeColorHeading;
+    }
+  }
+  .form-button-group {
+    background: $darkModeBackground;
+  }
+  .message-divider {
+    color: $darkModeColorText;
+  }
+  .message-item {
+    .bubble {
+      background: $darkModeColorLine;
+      color: $darkModeColorHeading;
+    }
+    .title {
+      color: $darkModeColorText;
+    }
+    .footer {
+      color: $darkModeColorHeading;
+    }
+    &.user {
+      .bubble {
+        background: $colorPrimary;
+      }
+    }
+  }
+
+  .chatFooter {
+    background: $darkModeContentBackground;
+    border-top-color: $darkModeColorLine;
+  }
+  .modalbox {
+    background: $darkModeBackground;
+    .modal-dialog {
+      .modal-content {
+        background: $darkModeBackground;
+        .modal-header {
+          border-bottom-color: $darkModeColorLine;
+          background: $darkModeContentBackground;
+          .modal-title {
+            color: $darkModeColorHeading;
+          }
+        }
+      }
+    }
+  }
+
+  .notification-box {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.3s all;
+    &.show {
+      top: 0;
+    }
+  }
+
+  .notification-dialog.android-style {
+    background: darken($darkModeContentBackground, 4%);
+    .notification-header {
+      .in {
+        strong {
+          color: $darkModeColorHeading;
+        }
+      }
+      .close-button {
+        color: $darkModeColorLight;
+        &:hover,
+        &:active {
+          color: $darkModeColorText;
+        }
+      }
+    }
+    .icon-box {
+      color: $darkModeColorLight;
+    }
+    .notification-footer {
+      border-top: 1px solid $darkModeColorLine;
+      .notification-button {
+        border-right: 1px solid $darkModeColorLine;
+        &:hover,
+        &:active {
+          background: rgba($darkModeColorLine, 0.3);
+        }
+      }
+    }
+  }
+  .notification-dialog.ios-style {
+    background: darken($darkModeContentBackground, 4%);
+    .notification-header {
+    }
+    .icon-box {
+      color: $darkModeColorLight;
+    }
+  }
+
+  .panelbox {
+    .modal-dialog {
+      .modal-content {
+        background: $darkModeContentBackground;
+        .modal-header {
+          .modal-title {
+            color: $darkModeColorHeading;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    &.pagination-secondary {
+      .page-item {
+        .page-link {
+          background: $darkModeBackground;
+          color: $darkModeColorText;
+        }
+      }
+    }
+  }
+
+  .progress {
+    background: lighten($darkModeContentBackground, 6%);
+  }
+
+  .searchbox {
+    .form-control {
+      border-color: $darkModeColorLine !important;
+      color: $darkModeColorHeading;
+      background: $darkModeColorLine;
+      &:focus {
+        border-color: lighten($darkModeColorLine, 10%) !important;
+        & ~ .input-icon {
+          color: $darkModeColorHeading;
+        }
+      }
+    }
+    .close {
+      color: $darkModeColorLight;
+    }
+    .input-icon {
+      color: $darkModeColorLight;
+    }
+  }
+
+  #search {
+    background: $darkModeContentBackground;
+    border-bottom-color: $darkModeContentBackground;
+    .searchbox {
+      .form-control {
+        color: $darkModeColorHeading;
+        &:focus {
+          border-color: darken($darkModeColorLine, 15%);
+          & ~ .input-icon {
+            color: $darkModeColorHeading;
+          }
+        }
+      }
+      .input-icon {
+        color: $darkModeColorLight;
+      }
+    }
+  }
+
+  .table {
+    color: $darkModeColorText;
+    thead {
+      th {
+        color: $darkModeColorHeading;
+      }
+    }
+    td,
+    th {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+  .table-dark {
+    background: darken($darkModeBackground, 3%);
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background: rgba($darkModeColorLine, 0.4);
+  }
+  .table-bordered {
+    td,
+    th {
+      border-color: $darkModeColorLine;
+    }
+  }
+  .timeline {
+    &:before {
+      background: $darkModeColorLine;
+    }
+    .dot {
+      background: darkModeColorLight;
+      box-shadow: 0 0 0 4px $darkModeContentBackground;
+    }
+  }
+  .toast-box {
+    background: darken($darkModeBackground, 5%);
+  }
+
+  .appFooter {
+    border-top-color: $darkModeColorLine;
+    background: $darkModeBackground;
+    .footer-title {
+      color: $darkModeColorHeading;
+    }
+    .btn-icon {
+      color: $darkModeColorLight;
+    }
+  }
+
+  .sidebar-buttons {
+    background: $darkModeBackground;
+    border-top: 1px solid $darkModeColorLine;
+    .button {
+      color: $darkModeColorHeading;
+      &:hover,
+      &:active {
+        background: rgba($darkModeColorLine, 0.2);
+      }
+    }
+    &:last-child {
+      border-right-color: transparent;
+    }
+  }
+  .profileBox {
+    .in {
+      strong {
+        color: #fff;
+      }
+      .text-muted {
+        color: rgba(255, 255, 255, 0.5) !important;
+      }
+    }
+  }
+  .close-sidebar-button {
+    color: rgba(255, 255, 255, 0.5) !important;
+    &:active {
+      background: rgba($darkModeColorLine, 0.3);
+    }
+  }
+
+  .ios-add-to-home,
+  .android-add-to-home {
+    background: rgba($darkModeBackground, 0.4) !important;
+    .modal-content {
+      &:before {
+        border-top-color: $darkModeContentBackground;
+      }
+      .action-sheet-content {
+        color: $darkModeColorHeading;
+      }
+    }
+  }
+
+  .demoIcons {
+    color: $darkModeColorText;
+  }
+
+  .custom-file-upload {
+    label {
+      background-color: rgba($darkModeColorLine, 0.2);
+      border-color: $darkModeColorLine;
+      span {
+        color: $darkModeColorLight;
+        i.icon,
+        ion-icon {
+          color: $darkModeColorLight;
+        }
+      }
+      &.file-uploaded {
+        span {
+          color: $darkModeColorText;
+          background-color: $darkModeColorLine;
+        }
+      }
+    }
+  }
+
+  .nav-tabs.style1 {
+    background: rgba($darkModeColorLine, 0.4);
+    .nav-item {
+      .nav-link {
+        color: $darkModeColorText;
+        &.active {
+          background: lighten($darkModeColorLine, 5%);
+          color: $darkModeColorHeading;
+        }
+      }
+    }
+  }
+
+  .nav-tabs.lined {
+    .nav-item {
+      .nav-link {
+        color: $darkModeColorText;
+        background: transparent;
+        &.active {
+          background: transparent;
+          color: $colorPrimary;
+        }
+      }
+    }
+  }
+
+  .blog-post {
+    .post-header {
+      color: $darkModeColorLight;
+      border-top-color: $darkModeColorLine;
+      border-bottom-color: $darkModeColorLine;
+      a {
+        color: $darkModeColorHeading;
+      }
+    }
+  }
+
+  #countDown {
+    color: $darkModeColorHeading;
+    > div {
+      border-color: $darkModeColorLine;
+      span {
+        color: $darkModeColorLight;
+      }
+    }
+  }
+
+  figure.codebox {
+    background: $darkModeColorLine;
+    code {
+      color: $darkModeColorHeading;
+    }
+  }
+
+  .profile-head {
+    .in {
+      .subtext {
+        color: $darkModeColorLight;
+      }
+    }
+  }
+  .profile-info {
+    .bio {
+      color: $darkModeColorText;
+    }
+  }
+  .profile-stats {
+    .item {
+      color: $darkModeColorText;
+      strong {
+        color: $darkModeColorHeading;
+      }
+    }
+  }
+
+
+  .rate-block{
+    color: $darkModeColorLight;
+  }
+  .product-detail-header{
+    .title{
+      color: $darkModeColorHeading;
+    }
+    .text{
+      color: $darkModeColorText;
+    }
+    .detail-footer{
+      .price{
+        .old-price{
+          color: $darkModeColorText;
+        }
+      }
+    }
+  }
+
+  .cart-item{
+    .in{
+      .text{
+        .detail{
+          color: $darkModeColorLight;
+        }
+      }
+    }
+    .cart-item-footer{
+      border-top: 1px solid $darkModeColorLine;
+    }
+  }
+
+
+}

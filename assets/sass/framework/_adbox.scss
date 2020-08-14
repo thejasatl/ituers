@@ -1,0 +1,43 @@
+.adbox{
+    text-align: center;
+    &.fixed{
+        position: fixed;
+        bottom: 56px;
+        left: 50%;
+        margin-left: -150px;
+        right: 0;
+        width: 300px;
+        z-index: 100;
+        padding-bottom: $safeBottom;
+        .closebutton{
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            background: rgba(0,0,0,.4);
+            color: rgba(255,255,255,.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    &.hide{
+        &.fixed{
+            bottom: -100%;
+        }
+    }
+}
+.adbox-300-50{
+    img{
+        width: 300px;
+        height: 50px;
+    }
+}
+.adbox-300-250{
+    img{
+        width: 300px;
+        height: 250px;
+    }
+}

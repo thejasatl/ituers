@@ -1,0 +1,109 @@
+.alert {
+  margin: 0;
+  padding: 6px 16px;
+  border: 0;
+  font-size: $fontSizeSub;
+  border-radius: $borderRadius;
+  .close{
+      text-shadow: none !important;
+      outline: 0;
+      opacity: 1;
+      width: 40px;
+      padding: 0;
+      line-height: 1em;
+      height: 36px !important;
+  }
+  .alert-title{
+    margin: 4px 0;
+    font-size: $fontSize;
+    font-weight: $medium;
+  }
+  &.alert-dismissible{
+      padding-right: 56px;
+  }
+}
+
+@mixin alertStyle($color) {
+  background: $color;
+  color: #fff;
+  border: 1px solid $color;
+  a{
+      color: #fff !important;
+      text-decoration: underline;
+  }
+  .alert-title{
+    color: #FFF;
+  }
+  .close{
+      color: #FFF;
+  }
+}
+@mixin alertOutlineStyle($color) {
+  background: transparent;
+  color: $color;
+  border: 1px solid $color;
+  a{
+      color: $color !important;
+      text-decoration: underline !important;
+  }
+  .alert-title{
+    color: $color;
+  }
+  .close{
+      color: $color;
+  }
+}
+
+.alert-primary {
+  @include alertStyle($colorPrimary);
+}
+.alert-outline-primary {
+  @include alertOutlineStyle($colorPrimary);
+}
+.alert-secondary {
+  @include alertStyle($colorSecondary);
+}
+.alert-outline-secondary {
+  @include alertOutlineStyle($colorSecondary);
+}
+.alert-success {
+  @include alertStyle($colorSuccess);
+}
+.alert-outline-success {
+  @include alertOutlineStyle($colorSuccess);
+}
+.alert-danger {
+  @include alertStyle($colorDanger);
+}
+.alert-outline-danger {
+  @include alertOutlineStyle($colorDanger);
+}
+.alert-warning {
+  @include alertStyle($colorWarning);
+}
+.alert-outline-warning {
+  @include alertOutlineStyle($colorWarning);
+}
+.alert-info {
+  @include alertStyle($colorInfo);
+}
+.alert-outline-info {
+  @include alertOutlineStyle($colorInfo);
+}
+.alert-light {
+  background: #FFF;
+  color: $colorHeading;
+}
+.alert-dark {
+  background: #333;
+  color: #FFF;
+  a{
+      color: #FFF !important;
+      text-decoration: underline !important;
+  }
+}
+.alert-outline-dark {
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+  }

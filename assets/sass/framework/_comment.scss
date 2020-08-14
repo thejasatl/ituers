@@ -1,0 +1,76 @@
+.comment-block{
+    font-size: $fontSizeSub;
+    line-height: 1.6em;
+    .item{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .avatar{
+            margin-right: 14px;
+        }
+        .in{
+            width: 100%;
+        }
+        .text{
+            color: $colorText;
+        }
+        .comment-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            .title{
+                margin: 0;
+                padding-right: 10px;
+                color: $colorHeading;
+                font-size: $fontSize;
+            }
+            .time{
+                font-size: $fontSizeCaption;
+                color: $colorLight;
+            }
+        }
+        .comment-footer{
+            margin-top: 10px;
+            display: flex;
+            align-content: flex-start;
+            font-size: $fontSizeCaption;
+            .comment-button{
+                font-weight: $medium;
+                display: flex;
+                align-content: center;
+                margin-right: 14px;
+                color: $colorText !important;
+                i.icon,
+                ion-icon{
+                    margin-right: 5px;
+                    font-size: 18px;
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+}
+
+.comment-box{
+    padding: 24px 16px;
+    text-align: center;
+    .imaged{
+        margin: 0 auto 10px auto;
+        box-shadow: $boxShadow;
+    }
+    .card-title{
+        margin: 0;
+        font-size: $fontSizeHeading;
+        font-weight: $medium;
+    }
+    .card-text{
+        font-size: $fontSizeCaption;
+    }
+    .text{
+        margin-top: 6px;
+    }
+}

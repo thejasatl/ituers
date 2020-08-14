@@ -1,0 +1,45 @@
+ion-icon {
+  --ionicon-stroke-width: 32px;
+}
+i.icon{
+  line-height: 1em !important;
+}
+.demoIcons{
+  font-size: 32px;
+  color: $colorHeading;
+}
+
+.iconedbox{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1em;
+  width: 32px;
+  height: 32px;
+  border-radius: $borderRadius;
+  &.iconedbox-sm{
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
+    line-height: 1em;
+  }
+  &.iconedbox-lg{
+    width: 64px;
+    height: 64px;
+    font-size: 42px;
+    line-height: 1em;
+  }
+  &.iconedbox-xl{
+    width: 96px;
+    height: 96px;
+    font-size: 64px;
+    line-height: 1em;
+  }
+  &.iconedbox-xxl{
+    width: 144px;
+    height: 144px;
+    font-size: 90px;
+    line-height: 1em;
+  }
+}

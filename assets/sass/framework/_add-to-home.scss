@@ -1,0 +1,85 @@
+// add to home using action sheet styles.
+.ios-add-to-home {
+  .modal-content {
+    position: relative;
+    margin-bottom: 10px;
+    z-index: 1;
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 10px solid #fff;
+      position: absolute;
+      bottom: -7px;
+      z-index: 10;
+      left: 50%;
+      margin-left: -16px;
+    }
+    .action-sheet-content {
+      font-size: $fontSizeSub;
+      color: $colorHeading;
+      line-height: 1.5em;
+      h4 {
+        font-size: $fontSize;
+        margin-bottom: 10px;
+      }
+      i.icon,
+      ion-icon {
+        font-size: 22px;
+        margin-bottom: -4px;
+      }
+    }
+  }
+}
+
+.android-add-to-home {
+  z-index: 200000;
+  .modal-dialog {
+    top: 0;
+    bottom: auto;
+    padding: 6px !important;
+    transform: translate(0, -100%) !important;
+    transition: .5s all !important;
+  }
+  &.show .modal-dialog {
+    transform: translate(0, 0) !important;
+    top: 10px;
+  }
+  .modal-content {
+    position: relative;
+    z-index: 1;
+    border-radius: 4px !important;
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 10px solid #FFF;
+      position: absolute;
+      top: -7px;
+      z-index: 10;
+      right: 9px;
+      transform: rotate(180deg);
+      margin-left: -16px;
+    }
+    .action-sheet-content {
+      font-size: $fontSizeSub;
+      color: $colorHeading;
+      line-height: 1.5em;
+      h4 {
+        font-size: $fontSize;
+        margin-bottom: 10px;
+      }
+      i.icon,
+      ion-icon {
+        font-size: 20px;
+        margin-bottom: -5px;
+      }
+    }
+  }
+}

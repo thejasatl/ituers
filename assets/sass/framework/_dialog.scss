@@ -1,0 +1,108 @@
+.dialogbox {
+  .modal-dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 12000;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, 0) !important;
+    transform: scale(0.7) !important;
+    .modal-content {
+      max-width: 280px;
+      margin: auto;
+      max-height: 560px;
+      overflow: auto;
+      border: 0;
+      border-radius: 16px;
+      .btn-list {
+        margin: 0;
+        .btn {
+          padding: 0px 10px;
+          min-height: 56px;
+          border-radius: 0;
+          margin: 0;
+          border: 0;
+          border-bottom: 1px solid $colorLine !important;
+          font-size: $fontSize;
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            background: rgba($colorLine,.3) !important;
+          }
+        }
+        .btn:last-child{
+          border-radius: 0 0 16px 16px;
+          border-bottom: 0 !important;
+        }
+      }
+      .btn-inline{
+        display: flex;
+        margin: 0;
+        .btn{
+          width: 100%;
+          border-radius: 0;
+          min-height: 56px;
+          border: 0 !important;
+          border-right: 1px solid $colorLine !important;
+          font-size: $fontSize;
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            background: rgba($colorLine,.3) !important;
+          }
+          &:last-child{
+            border-right: 0 !important;
+            border-radius: 0 0 16px 0 !important;
+          }
+          &:first-child{
+            border-radius: 0 0 0 16px !important;
+          }
+        }
+      }
+      .modal-header {
+        border: 0;
+        padding: 20px 20px 10px 20px;
+        .modal-title {
+          color: $colorHeading;
+          text-align: center;
+          margin: 0 auto;
+          font-size: $fontSizeHeading;
+        }
+      }
+      .modal-body {
+        padding: 0 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: $fontSize;
+      }
+      .modal-footer {
+        border: 0;
+        border-top: 1px solid $colorLine;
+        padding: 0;
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+  &.show .modal-dialog {
+    transform: translate(0, 0) !important;
+    transform: scale(1) !important;
+    transition: .2s all;
+  }
+}
+
+.modal-icon{
+  font-size: 60px;
+  line-height: 1em;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  color: $colorPrimary;
+  text-align: center;
+}

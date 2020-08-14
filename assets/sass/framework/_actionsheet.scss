@@ -1,0 +1,149 @@
+.modal.action-sheet {
+  z-index: 9999;
+  .modal-dialog {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    min-width: 100%;
+    z-index: 12000;
+    transform: translate(0, 100%);
+  }
+  &.show .modal-dialog {
+    transform: translate(0, 0);
+  }
+  .close-button{
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      position: absolute;
+      right: 10px;
+      top: 3px;
+      color: $colorLight;
+      &:hover,
+      &:active{
+          color: $colorText;
+      }
+  }
+  .modal-content {
+    box-shadow: $boxShadow;
+    border: 0;
+    border-radius: 0;
+    padding-bottom: $safeBottom;
+    .action-sheet-content{
+        padding: 20px 16px;
+        max-height: 460px;
+        overflow: auto;
+    }
+    .modal-header{
+        display: block;
+        padding: 2px 20px;
+        .modal-title{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: block;
+            font-size: $fontSizeSub;
+            padding: 6px 0;
+            color: $colorHeading;
+            font-weight: $medium;
+        }
+    }
+    .modal-body{
+        padding: 0;
+    }
+  }
+}
+
+.action-button-list{
+    padding: 0;
+    margin: 0;
+    > li{
+        display: block;
+        .btn{
+            padding: 0;
+            display: flex;
+            width: 100%;
+            min-height: 50px;
+            font-size: $fontSize;
+            color: $colorHeading;
+            line-height: 1.1em;
+            justify-content: space-between;
+            font-weight: $regular;
+            border-radius: 0 !important;
+            padding: 10px 16px;
+            &:active,
+            &.active{
+                background: rgba($colorLine, 0.3);
+            }
+            &.text-primary{
+                color: $colorPrimary !important;
+            }
+            &.text-secondary{
+                color: $colorSecondary !important;
+            }
+            &.text-danger{
+                color: $colorDanger !important;
+            }
+            &.text-success{
+                color: $colorSuccess !important;
+            }
+            &.text-warning{
+                color: $colorWarning !important;
+            }
+            &.text-info{
+                color: $colorInfo !important;
+            }
+            &.text-light{
+                color: #FFF !important;
+            }
+            &.text-dark{
+                color: $colorHeading !important;
+            }
+            > span{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            i.icon,
+            ion-icon{
+                width: 24px !important;
+                height: 24px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                margin-left: -5px;
+                font-size: 24px;
+                line-height: 1em;
+            }
+        }
+        &.action-divider{
+            height: 1px;
+            background: $colorLine;
+        }
+    }
+}
+
+.action-sheet.inset{
+    .modal-dialog{
+        padding: 16px;
+        padding-bottom: 16px !important;
+        margin-bottom: $safeBottom;
+        .modal-content{
+            border-radius: 16px;
+            padding-bottom: 0;
+        }
+    }
+    .action-button-list{
+        > li:last-child{
+            .btn{
+                border-radius: 0 0 16px 16px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.imaged{
+    height: auto;
+    border-radius: $borderRadius;
+    &.w16{
+        width: 16px !important;
+    }
+    &.w24{
+        width: 24px !important;
+    }
+    &.w32{
+        width: 32px !important;
+    }
+    &.w36{
+        width: 36px !important;
+    }
+    &.w48{
+        width: 48px !important;
+    }
+    &.w64{
+        width: 64px !important;
+    }
+    &.w76{
+        width: 76px !important;
+    }
+    &.w86{
+        width: 86px !important;
+    }
+    &.w100{
+        width: 100px !important;
+    }
+    &.w120{
+        width: 120px !important;
+    }
+    &.w140{
+        width: 140px !important;
+    }
+    &.w160{
+        width: 160px !important;
+    }
+    &.w180{
+        width: 180px !important;
+    }
+    &.w200{
+        width: 200px !important;
+    }
+    &.img-fluid{
+        width: 100%;
+    }
+    &.rounded{
+        border-radius: 100% !important;
+    }
+    &.radius{
+        border-radius: $borderRadius !important;
+    }
+    &.square{
+        border-radius: 0 !important;
+    }
+    
+}

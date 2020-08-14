@@ -1,0 +1,31 @@
+.login-form{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    .form-image{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+}
+.form-button-group{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #FFF;
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $safeBottom;
+}
+.form-links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 14px;
+}

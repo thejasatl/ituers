@@ -1,0 +1,448 @@
+.btn {
+  height: 40px;
+  padding: 3px 18px;
+  font-size: $fontSizeSub;
+  line-height: 1.2em;
+  font-weight: $medium;
+  box-shadow: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all;
+  text-decoration: none !important;
+  border-radius: $borderRadius;
+  border-width: 2px;
+  i.icon,
+  ion-icon{
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: -2px;
+    font-weight: 700;
+  }
+  &.rounded {
+    border-radius: 100px !important;
+  }
+  &.square {
+    border-radius: 0 !important;
+  }
+  &.shadowed {
+    box-shadow: $boxShadow !important;
+  }
+}
+.btn-lg {
+  height: 48px;
+  padding: 3px 24px;
+  font-size: 18px;
+  i.icon,
+  ion-icon {
+    font-size: 26px;
+  }
+}
+.btn-sm {
+  height: 30px;
+  padding: 0px 12px;
+  font-size: 12px;
+  i.icon,
+  ion-icon {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+}
+.btn-group {
+  .btn {
+    &:active {
+      transform: none;
+    }
+  }
+}
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  i.icon,
+  ion-icon {
+    text-align: center;
+    margin: 0 !important;
+  }
+  &.btn-lg{
+    width: 48px;
+    height: 48px;
+    i.icon,
+    ion-icon{
+      font-size: 32px;
+    }
+  }
+  &.btn-sm{
+    width: 30px;
+    height: 30px;
+    i.icon,
+    ion-icon{
+      font-size: 18px;
+    }
+  }
+}
+
+
+@mixin buttonStyle($color) {
+  background: $color !important;
+  border-color: $color !important;
+  color: #ffffff !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background: darken($color, 5%) !important;
+    border-color: darken($color, 5%) !important;
+  }
+  &.disabled,
+  &:disabled {
+    background: $color;
+    border-color: $color;
+    opacity: 0.5;
+  }
+}
+.btn-primary {
+  @include buttonStyle($colorPrimary);
+}
+.btn-secondary {
+  @include buttonStyle($colorSecondary);
+}
+.btn-success {
+  @include buttonStyle($colorSuccess);
+}
+.btn-danger {
+  @include buttonStyle($colorDanger);
+}
+.btn-warning {
+  color: #fff !important;
+  @include buttonStyle($colorWarning);
+}
+.btn-link {
+  color: $colorPrimary !important;
+}
+.btn-info {
+  @include buttonStyle($colorInfo);
+}
+.btn-dark {
+  @include buttonStyle(#333);
+}
+.btn-light {
+  @include buttonStyle(rgba(255, 255, 255, 0.5));
+  color: $colorHeading !important;
+}
+@mixin buttonOutlineStyle($color) {
+  background: transparent;
+  border-color: $color;
+  border-width: 1px;
+  color: $color;
+  transition: 0.2s all;
+  &:hover,
+  &:active {
+    background: rgba($color, 0.15) !important;
+    border-color: $color !important;
+    color: $color !important;
+  }
+  &.active {
+    background: $color !important;
+    color: #fff !important;
+    border-color: $color !important;
+  }
+  &.disabled,
+  &:disabled {
+    color: $color !important;
+    border-color: $color !important;
+    background: transparent !important;
+    opacity: 0.5;
+  }
+}
+.btn-outline-primary {
+  @include buttonOutlineStyle($colorPrimary);
+}
+.btn-outline-secondary {
+  @include buttonOutlineStyle($colorSecondary);
+}
+.btn-outline-success {
+  @include buttonOutlineStyle($colorSuccess);
+}
+.btn-outline-danger {
+  @include buttonOutlineStyle($colorDanger);
+}
+.btn-outline-warning {
+  @include buttonOutlineStyle($colorWarning);
+}
+.btn-outline-info {
+  @include buttonOutlineStyle($colorInfo);
+}
+.btn-outline-light {
+  @include buttonOutlineStyle(#fff);
+  &:active {
+    color: $colorHeading !important;
+  }
+}
+@mixin buttonTextStyle($color) {
+  background: transparent;
+  border-color: transparent;
+  color: $color !important;
+  transition: 0.2s all;
+  &:hover {
+    background: transparent;
+  }
+  &:active,
+  &.active {
+    background: rgba($color, 0.15) !important;
+    border-color: transparent !important;
+    color: $color !important;
+  }
+  &.disabled,
+  &:disabled {
+    color: $color !important;
+    border-color: $color !important;
+    background: transparent !important;
+    opacity: 0.5;
+  }
+}
+.btn-text-primary {
+  @include buttonTextStyle($colorPrimary);
+}
+.btn-text-secondary {
+  @include buttonTextStyle($colorSecondary);
+}
+.btn-text-success {
+  @include buttonTextStyle($colorSuccess);
+}
+.btn-text-danger {
+  @include buttonTextStyle($colorDanger);
+}
+.btn-text-warning {
+  @include buttonTextStyle($colorWarning);
+}
+.btn-text-info {
+  @include buttonTextStyle($colorInfo);
+}
+.btn-text-light {
+  background: transparent;
+  color: #fff;
+  &:hover,
+  &:active,
+  &.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+.btn-text-dark {
+  @include buttonTextStyle($colorHeading);
+}
+.btn-group {
+  .btn {
+    margin-left: -1px !important;
+  }
+}
+
+
+.btn-facebook {
+  color: #fff !important;
+  background: #39579b;
+  &:hover,
+  &:active{
+    background: darken(#39579b, 5%);
+  }
+}
+.bg-facebook{
+  background: #39579b;
+  color: #FFF !important;
+}
+
+.btn-twitter {
+  color: #fff !important;
+  background: #049ff6;
+  &:hover,
+  &:active{
+    background: darken(#049ff6, 5%);
+  }
+}
+.bg-twitter{
+  background: #049ff6;
+  color: #FFF !important;
+}
+
+.btn-instagram {
+  color: #fff !important;
+  background: #df237b;
+  &:hover,
+  &:active{
+    background: darken(#df237b, 5%);
+  }
+}
+.bg-instagram{
+  background: #DE0067;
+  color: #FFF !important;
+}
+
+.btn-linkedin {
+  color: #fff !important;
+  background: #0075aa;
+  &:hover,
+  &:active{
+    background: darken(#0075aa, 5%);
+  }
+}
+.bg-linkedin{
+  background: #0075aa;
+  color: #FFF !important;
+}
+
+.btn-twitch {
+  color: #fff !important;
+  background: #923cff;
+  &:hover,
+  &:active{
+    background: darken(#923cff, 5%);
+  }
+}
+.bg-twitch{
+  background: #923cff;
+  color: #FFF !important;
+}
+
+.btn-whatsapp {
+  color: #fff !important;
+  background: #0ad561;
+  &:hover,
+  &:active{
+    background: darken(#0ad561, 5%);
+  }
+}
+.bg-whatsapp{
+  background: #0ad561;
+  color: #FFF !important;
+}
+
+.btn-youtube {
+  color: #fff !important;
+  background: #FF0000;
+  &:hover,
+  &:active{
+    background: darken(#FF0000, 5%);
+  }
+}
+.bg-youtube{
+  background: #FF0000;
+  color: #FFF !important;
+}
+
+.btn-amazon{
+  color: #fff !important;
+  background: #292929;
+  &:hover,
+  &:active{
+    background: darken(#292929, 5%);
+  }
+}
+.bg-amazon{
+  background: #292929;
+  color: #FFF !important;
+}
+
+.btn-android{
+  color: #fff !important;
+  background: #7DD159;
+  &:hover,
+  &:active{
+    background: darken(#7DD159, 5%);
+  }
+}
+.bg-android{
+  background: #7DD159;
+  color: #FFF !important;
+}
+
+.btn-apple{
+  color: #fff !important;
+  background: #000;
+  &:hover,
+  &:active{
+    background: #222;
+  }
+}
+.bg-apple{
+  background: #000;
+  color: #FFF !important;
+}
+
+.btn-dribbble{
+  color: #fff !important;
+  background: #EC4989;
+  &:hover,
+  &:active{
+    background: darken(#EC4989, 5%);
+  }
+}
+.bg-dribbble{
+  background: #EC4989;
+  color: #FFF !important;
+}
+
+.btn-skype{
+  color: #fff !important;
+  background: #00A8F3;
+  &:hover,
+  &:active{
+    background: darken(#00A8F3, 5%);
+  }
+}
+.bg-skype{
+  background: #00A8F3;
+  color: #FFF !important;
+}
+
+.btn-pinterest{
+  color: #fff !important;
+  background: #F12A2C;
+  &:hover,
+  &:active{
+    background: darken(#F12A2C, 5%);
+  }
+}
+.bg-pinterest{
+  background: #F12A2C;
+  color: #FFF !important;
+}
+
+.btn-dropbox{
+  color: #fff !important;
+  background: #005CFF;
+  &:hover,
+  &:active{
+    background: darken(#005CFF, 5%);
+  }
+}
+.bg-dropbox{
+  background: #005CFF;
+  color: #FFF !important;
+}
+
+.btn-bitcoin{
+  color: #fff !important;
+  background: #F99400;
+  &:hover,
+  &:active{
+    background: darken(#F99400, 5%);
+  }
+}
+.bg-bitcoin{
+  background: #F99400;
+  color: #FFF !important;
+}
+
+.btn-github{
+  color: #fff !important;
+  background: #323131;
+  &:hover,
+  &:active{
+    background: darken(#323131, 5%);
+  }
+}
+.bg-github{
+  background: #323131;
+  color: #FFF !important;
+}

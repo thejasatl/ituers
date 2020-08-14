@@ -1,0 +1,30 @@
+.blog-post{
+    .title{
+        padding: 0px 16px;
+        margin: 0 0 10px 0;
+    }
+    .post-header{
+        font-size: $fontSizeCaption;
+        padding: 10px 0;
+        margin: 16px 16px;
+        color: $colorLight;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $colorLine;
+        border-bottom: 1px solid $colorLine;
+        a{
+            color: $colorHeading;
+            font-weight: $bold;
+        }
+    }
+    .post-body{
+        padding: 0 16px;
+        img{
+            width: calc(100% + 32px);
+            height: auto;
+            margin: 0px -16px;
+            margin-bottom: 16px;
+        }
+    }
+}

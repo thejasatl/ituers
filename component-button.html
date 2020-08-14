@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Buttons</div>
+        <div class="right"></div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+
+        <div class="section full mt-1">
+            <div class="section-title">Filled Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-primary mr-1 mb-1">PRIMARY</button>
+                <button type="button" class="btn btn-secondary mr-1 mb-1">SECONDARY</button>
+                <button type="button" class="btn btn-success mr-1 mb-1">SUCCESS</button>
+                <button type="button" class="btn btn-danger mr-1 mb-1">DANGER</button>
+                <button type="button" class="btn btn-warning mr-1 mb-1">WARNING</button>
+                <button type="button" class="btn btn-info mr-1 mb-1">INFO</button>
+                <button type="button" class="btn btn-light mr-1 mb-1">LIGHT</button>
+                <button type="button" class="btn btn-dark mr-1 mb-1">DARK</button>
+                <button type="button" class="btn btn-link mr-1 mb-1">LINK</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Border Radius</div>
+            <div class="wide-block pt-2 pb-2">
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <p><button type="button" class="btn btn-primary mr-1">DEFAULT</button> default style</p>
+                <p><button type="button" class="btn btn-primary rounded mr-1">ROUNDED</button> <code>.rounded</code>
+                    style</p>
+                <button type="button" class="btn btn-primary square mr-1">SQUARE</button> <code>.square</code> style
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Shadowed Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+                <p>Add <code>.shadowed</code> to make button raised</p>
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-primary shadowed  mr-1 mb-1">BUTTON</button>
+                <button type="button" class="btn btn-outline-primary shadowed mr-1 mb-1">BUTTON</button>
+                <button type="button" class="btn btn-text-primary shadowed mr-1 mb-1">BUTTON</button>
+                <button type="button" class="btn btn-primary rounded shadowed  mr-1 mb-1">BUTTON</button>
+                <button type="button" class="btn btn-outline-primary rounded shadowed mr-1 mb-1">BUTTON</button>
+                <button type="button" class="btn btn-text-primary rounded shadowed mr-1 mb-1">BUTTON</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Sizes</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Easy to change sizes.</p>
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <p>
+                    <button type="button" class="btn btn-primary btn-sm mr-1">BUTTON</button> <code>.btn-sm</code>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-primary mr-1">BUTTON</button> Default
+                </p>
+                <p class="mb-2">
+                    <button type="button" class="btn btn-primary btn-lg mr-1">BUTTON</button> <code>.btn-lg</code>
+                </p>
+                <p>Full with (100%) block buttons with <br> <code>.btn-block</code></p>
+                <button type="button" class="btn btn-primary btn-sm btn-block">BUTTON</button>
+                <button type="button" class="btn btn-primary btn-block">BUTTON</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">BUTTON</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Icon Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-icon btn-primary mr-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-danger mr-1 mb-1">
+                    <ion-icon name="alarm-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-success mr-1 mb-1">
+                    <ion-icon name="call-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-warning mr-1 mb-1">
+                    <ion-icon name="flash-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-info mr-1 mb-1">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </button>
+                <div class="mt-1 mb-1">Sizes</div>
+                <button type="button" class="btn btn-icon btn-sm btn-primary mr-1 mb-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-primary mr-1 mb-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-lg btn-primary mr-1 mb-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Outline Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-outline-primary mr-1 mb-1">PRIMARY</button>
+                <button type="button" class="btn btn-outline-secondary mr-1 mb-1">SECONDARY</button>
+                <button type="button" class="btn btn-outline-success mr-1 mb-1">SUCCESS</button>
+                <button type="button" class="btn btn-outline-danger mr-1 mb-1">DANGER</button>
+                <button type="button" class="btn btn-outline-warning mr-1 mb-1">WARNING</button>
+                <button type="button" class="btn btn-outline-info mr-1 mb-1">INFO</button>
+                <br>
+                <button type="button" class="btn btn-outline-dark mr-1 mb-1">DARK</button>
+                <button type="button" class="btn btn-outline-light mr-1 mb-1">LIGHT</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Text Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-text-primary mr-1 mb-1">PRIMARY</button>
+                <button type="button" class="btn btn-text-secondary mr-1 mb-1">SECONDARY</button>
+                <button type="button" class="btn btn-text-success mr-1 mb-1">SUCCESS</button>
+                <button type="button" class="btn btn-text-danger mr-1 mb-1">DANGER</button>
+                <button type="button" class="btn btn-text-warning mr-1 mb-1">WARNING</button>
+                <button type="button" class="btn btn-text-info mr-1 mb-1">INFO</button>
+                <br>
+                <button type="button" class="btn btn-text-dark mr-1 mb-1">DARK</button>
+                <button type="button" class="btn btn-text-light mr-1 mb-1">LIGHT</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Iconed Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete mr-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-primary btn-sm mr-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    SMALL
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary mr-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    DEFAULT
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg mr-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    LARGE
+                </button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">Social Buttons</div>
+            <div class="wide-block pt-2 pb-1">
+
+                <p>
+                    <button type="button" class="btn btn-facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        Facebook
+                    </button>
+                    <button type="button" class="btn btn-icon btn-facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        Twitter
+                    </button>
+                    <button type="button" class="btn btn-icon btn-twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        Instagram
+                    </button>
+                    <button type="button" class="btn btn-icon btn-instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        Linkedin
+                    </button>
+                    <button type="button" class="btn btn-icon btn-linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-twitch">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                        Twitch
+                    </button>
+                    <button type="button" class="btn btn-icon btn-twitch">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-whatsapp">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        Whatsapp
+                    </button>
+                    <button type="button" class="btn btn-icon btn-whatsapp">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-youtube">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        Youtube
+                    </button>
+                    <button type="button" class="btn btn-icon btn-youtube">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-amazon">
+                        <ion-icon name="logo-amazon"></ion-icon>
+                        Amazon
+                    </button>
+                    <button type="button" class="btn btn-icon btn-amazon">
+                        <ion-icon name="logo-amazon"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-android">
+                        <ion-icon name="logo-android"></ion-icon>
+                        Android
+                    </button>
+                    <button type="button" class="btn btn-icon btn-android">
+                        <ion-icon name="logo-android"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-apple">
+                        <ion-icon name="logo-apple"></ion-icon>
+                        Apple
+                    </button>
+                    <button type="button" class="btn btn-icon btn-apple">
+                        <ion-icon name="logo-apple"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-dribbble">
+                        <ion-icon name="logo-dribbble"></ion-icon>
+                        Dribbble
+                    </button>
+                    <button type="button" class="btn btn-icon btn-dribbble">
+                        <ion-icon name="logo-dribbble"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-skype">
+                        <ion-icon name="logo-skype"></ion-icon>
+                        Skype
+                    </button>
+                    <button type="button" class="btn btn-icon btn-skype">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-pinterest">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        Pinterest
+                    </button>
+                    <button type="button" class="btn btn-icon btn-pinterest">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-dropbox">
+                        <ion-icon name="logo-dropbox"></ion-icon>
+                        Dropbox
+                    </button>
+                    <button type="button" class="btn btn-icon btn-dropbox">
+                        <ion-icon name="logo-dropbox"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-bitcoin">
+                        <ion-icon name="logo-bitcoin"></ion-icon>
+                        Bitcoin
+                    </button>
+                    <button type="button" class="btn btn-icon btn-bitcoin">
+                        <ion-icon name="logo-bitcoin"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-github">
+                        <ion-icon name="logo-github"></ion-icon>
+                        Github
+                    </button>
+                    <button type="button" class="btn btn-icon btn-github">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">Checkbox and radio buttons</div>
+            <div class="wide-block pt-2 pb-2">
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-primary active">
+                        <input type="radio" name="options" id="option1" checked>Apple
+                    </label>
+                    <label class="btn btn-outline-primary">
+                        <input type="radio" name="options" id="option2"> Banana
+                    </label>
+                    <label class="btn btn-outline-primary">
+                        <input type="radio" name="options" id="option3"> Orange
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="javascript:;" class="item" data-toggle="modal" data-target="#sidebarPanel">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                        </div>
+                        <div class="in">
+                            <strong>Julian Gruber</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                California
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Discover
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-components.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Components
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Pages</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Chat</div>
+                                    <span class="badge badge-danger">5</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="listview-title mt-2 mb-1">
+                        <span>Friends</span>
+                    </div>
+                    <ul class="listview image-listview flush transparent no-line">
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sophie Asveld</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sebastian Bennett</div>
+                                    <span class="badge badge-danger">6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Beth Murphy</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Amelia Cabal</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Henry Doe</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- sidebar buttons -->
+                <div class="sidebar-buttons">
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="archive-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

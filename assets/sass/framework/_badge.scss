@@ -1,0 +1,87 @@
+.badge{
+    font-size: 12px;
+    line-height: 1em;
+    border-radius: 100px;
+    letter-spacing: 0;
+    height: 22px;
+    min-width: 22px;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: $regular;
+}
+.badge-primary,
+a.badge-primary{
+    background: $colorPrimary !important;
+}
+.badge-secondary,
+a.badge-secondary{
+    background: $colorSecondary !important;
+}
+.badge-success,
+a.badge-success{
+    background: $colorSuccess !important;
+}
+.badge-danger,
+a.badge-danger{
+    background: $colorDanger !important;
+}
+.badge-warning,
+a.badge-warning{
+    background: $colorWarning !important;
+    color: #FFF;
+}
+.badge-info,
+a.badge-info{
+    background: $colorInfo !important;
+}
+.badge-light,
+a.badge-light{
+    background: rgba(255,255,255,.6) !important;
+    color: $colorHeading;
+}
+.badge-dark,
+a.badge-dark{
+    background: #222 !important;
+}
+.badge-empty{
+    display: block !important;
+    min-width: 8px !important;
+    width: 8px !important; 
+    height: 8px !important;
+    padding: 0 !important;
+    font-size: 0px;
+}
+.appHeader{
+    .badge{
+        min-width: 16px;
+        height: 16px;
+        line-height: 9px !important;
+        font-size: 10px;
+        padding: 0 4px !important;
+        position: absolute;
+        right: 2px;
+        top: 10px;
+    }
+    .badge-empty{
+        top: 14px;
+    }
+}
+.appBottomMenu{
+    .badge{
+        min-width: 16px;
+        height: 16px;
+        line-height: 9px !important;
+        font-size: 10px;
+        padding: 0 4px !important;
+        position: absolute;
+        right: 50%;
+        transform: translateX(120%);
+        top: -3px;
+    }
+    .badge-empty{
+        transform: translateX(200%);
+        top: -1px;
+    }
+}

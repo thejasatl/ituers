@@ -1,0 +1,47 @@
+.pagination{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-item{
+        .page-link{
+            background: $colorPrimary;
+            border: 0;
+            color: #FFF;
+            box-shadow: 0 !important;
+            outline: 0 !important;
+            margin: 0 4px;
+            border-radius: $borderRadius !important;
+            font-size: $fontSizeSub;
+            &:focus{
+                box-shadow: none !important;
+            }
+        }
+    }
+    &.pagination-secondary{
+        .page-item{
+            .page-link{
+                background: #FFF;
+                color: $colorText;
+                box-shadow: $boxShadow;
+            }
+        }
+    }
+    &.pagination-rounded{
+        .page-item{
+            .page-link{
+                border-radius: 400px !important;
+            }
+        }
+    }
+    &.pagination-square{
+        .page-item{
+            .page-link{
+                border-radius: 0 !important;
+            }
+        }
+    }
+}

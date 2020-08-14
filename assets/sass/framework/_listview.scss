@@ -1,0 +1,324 @@
+@function svg-bg-color($color) {
+  @return "%23" + str-slice("#{$color}", 2, -1);
+}
+.listview-title {
+  color: $colorText;
+  padding: 7px 16px;
+  font-size: $fontSizeSub;
+  font-weight: $medium;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .link {
+    color: $colorLight;
+    font-weight: $medium;
+    font-size: $fontSizeCaption;
+    display: flex;
+    align-items: center;
+    i.icon,
+    ion-icon {
+      font-size: $fontSize;
+      margin-right: 4px;
+    }
+  }
+}
+.listview {
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: $colorHeading;
+  background: #fff;
+  border-top: 1px solid $colorLine;
+  border-bottom: 1px solid $colorLine;
+  line-height: 1.3em;
+  .text-muted {
+    font-size: $fontSizeSub;
+    color: $colorLight !important;
+  }
+  > li {
+    padding: 8px 16px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 50px;
+    .item {
+      position: relative;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: $colorLine;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    footer,
+    header {
+      font-size: 12px;
+      margin: 0;
+      line-height: 1.2em;
+    }
+    footer {
+      color: $colorText;
+      margin-top: 3px;
+    }
+    header {
+      margin-bottom: 3px;
+    }
+  }
+  > li.divider-title {
+    background: rgba($colorLine, 0.5);
+    margin-top: -1px;
+    border-top: 1px solid $colorLine;
+    border-bottom: 1px solid $colorLine;
+    padding: 12px 16px;
+    font-size: $fontSizeSub;
+    min-height: auto;
+    color: $colorText;
+    &:after {
+      display: none;
+    }
+  }
+  &.flush {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  &.transparent {
+    background: transparent;
+  }
+}
+.simple-listview {
+  > li {
+    display: flex;
+  }
+}
+.link-listview {
+  > li {
+    padding: 0;
+    min-height: auto;
+    a {
+      padding: 8px 36px 8px 16px;
+      min-height: 50px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      color: $colorHeading !important;
+      &:after {
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='10px' height='16px' viewBox='0 0 10 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Listview' transform='translate(-112.000000, -120.000000)' stroke='#{svg-bg-color($colorLight)}' stroke-width='2.178'%3E%3Cpolyline id='Path' points='114 122 120 128 114 134'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 16px;
+        height: 16px;
+        content: "";
+        position: absolute;
+        right: 12px;
+        opacity: 0.5;
+        top: 50%;
+        margin-top: -8px;
+      }
+      &:active {
+        background: rgba($colorLine, 0.3);
+      }
+    }
+  }
+}
+.image-listview {
+  > li {
+    padding: 0;
+    min-height: auto;
+    &:after {
+      left: 68px;
+    }
+    .item {
+      padding: 10px 16px;
+      width: 100%;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      .image {
+        min-width: 36px;
+        max-width: 36px;
+        width: 36px;
+        height: 36px;
+        border-radius: 400px;
+        margin-right: 16px;
+      }
+      .icon-box {
+        min-width: 36px;
+        max-width: 36px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1em;
+        font-size: 20px;
+        border-radius: 400px;
+        margin-right: 16px;
+        &.bg-primary,
+        &.bg-secondary,
+        &.bg-success,
+        &.bg-danger,
+        &.bg-warning,
+        &.bg-info,
+        &.bg-dark,
+        &.bg-light {
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+        }
+      }
+      .in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    a.item {
+      color: $colorHeading !important;
+      padding-right: 36px;
+      &:active {
+        background: rgba($colorLine, 0.3);
+      }
+      &:after {
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='10px' height='16px' viewBox='0 0 10 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Listview' transform='translate(-112.000000, -120.000000)' stroke='#{svg-bg-color($colorLight)}' stroke-width='2.178'%3E%3Cpolyline id='Path' points='114 122 120 128 114 134'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 16px;
+        height: 16px;
+        content: "";
+        position: absolute;
+        right: 12px;
+        opacity: 0.5;
+        top: 50%;
+        margin-top: -8px;
+      }
+    }
+  }
+  &.text {
+    > li {
+      &:after {
+        left: 16px;
+      }
+    }
+  }
+  &.media {
+    > li {
+      border-bottom: 1px solid $colorLine;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .imageWrapper {
+        margin-right: 16px;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.listview.no-line {
+  > li,
+  .item  {
+    &:after {
+      display: none;
+    }
+  }
+}
+.listview.no-space {
+  > li .item {
+    padding: 0;
+  }
+}
+
+.multi-level {
+  > a {
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
+  ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    > li {
+      border: 0 !important;
+      &:after {
+        height: 0;
+      }
+      a,
+      .item {
+        padding-left: 68px !important;
+      }
+    }
+  }
+  &.active {
+    > a {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
+    ul {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.link-listview {
+  .link-listview,
+  .image-listview{
+    a,
+    .item {
+      padding-left: 16px !important;
+    }
+  }
+  .image-listview.media{
+    > li{
+      border: 0;
+    }
+  }
+  .simple-listview {
+    padding-left: 0 !important;
+  }
+}
+.image-listview{
+  .simple-listview{
+    padding-left: 52px !important;
+  }
+}
+
+.image-listview.text{
+  .simple-listview{
+    padding-left: 0 !important;
+  }
+  .link-listview,
+  .image-listview{
+    a,
+    .item {
+      padding-left: 16px !important;
+    }
+  }
+}
+
+.image-listview.media{
+  .simple-listview{
+    padding-left: 80px !important;
+  }
+  .link-listview,
+  .image-listview{
+    a,
+    .item {
+      padding-left: 96px !important;
+    }
+  }
+}

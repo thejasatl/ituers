@@ -1,0 +1,64 @@
+.timeline{
+    position: relative;
+    padding: 24px 0;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 2px;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        background: $colorLine;
+        z-index: 1;
+    }
+    .item{
+        position: relative;
+        margin-bottom: 40px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .content{
+        padding-left: 20px;
+        .title{
+            margin-bottom: 5px;
+            line-height: 1.3em;
+        }
+        .text{
+            font-size: $fontSizeSub;
+            line-height: 1.4em;
+            padding-right: 30px;
+        }
+    }
+    .dot{
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        position: absolute;
+        background: $colorLight;
+        left: -5px;
+        top: 50%;
+        margin-top: -6px;
+        z-index: 10;
+        box-shadow: 0 0 0 3px #FFF;
+    }
+
+}
+.timeline.timed{
+    padding-left: 80px;
+    &:before{
+        left: 80px;
+    }
+    .time{
+        font-size: $fontSizeCaption;
+        position: absolute;
+        left: -80px;
+        line-height: 1.5em;
+        width: 70px;
+        text-align: right;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 20;
+    }
+}

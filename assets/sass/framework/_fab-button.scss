@@ -1,0 +1,156 @@
+.fab-button {
+  .fab {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $colorPrimary;
+    border-radius: 100%;
+    color: #fff !important;
+    > i.icon,
+    > ion-icon {
+        font-size: 26px;
+        transition: .2s all;
+      --ionicon-stroke-width: 42px;
+    }
+    &:hover,
+    &:active {
+      background: $colorPrimary;
+    }
+  }
+  &.text{
+      .fab{
+        > i.icon,
+        > ion-icon {
+            margin-right: 6px;
+        }
+          width: auto;
+          border-radius: 300px;
+          font-size: $fontSizeHeading;
+          padding: 0px 24px;
+      }
+  }
+  &.animate.dropdown.show {
+    .fab {
+      ion-icon[name=add],
+      ion-icon[name=add-sharp],
+      ion-icon[name=add-outline]{
+          transform: rotate(45deg);
+      }
+    }
+  }
+  &.dropdown.show{
+    .fab{
+      background: darken($colorPrimary, 5%);
+    }
+  }
+  .dropdown-menu {
+    margin: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0px 7px;
+    width: 56px;
+    min-width: 56px;
+    max-width: 56px;
+    text-align: center;
+    .dropdown-item {
+      padding: 0;
+      background: $colorPrimary;
+      width: 42px;
+      height: 42px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      margin: 14px 0;
+      border-radius: 100%;
+      box-shadow: $boxShadow;
+      &:hover,
+      &:active {
+        background: $colorPrimary;
+      }
+      i.icon,
+      ion-icon {
+        --ionicon-stroke-width: 32px;
+        line-height: 1em;
+        margin-right: 0;
+        color: #fff !important;
+        width: 24px !important;
+        height: 24px !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        line-height: 1em;
+        display: inline-flex;
+      }
+      p{
+          background: #FFF;
+          position: absolute;
+          left: 58px;
+          color: $colorHeading;
+          font-size: $fontSizeSub;
+          padding: 4px 12px;
+          line-height: 1.5em;
+          border-radius: $borderRadius;
+          box-shadow: $boxShadow;
+      }
+    }
+  }
+  &.bottom-right {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 100;
+    margin-bottom: $safeBottom;
+  }
+  &.bottom-left {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 100;
+    margin-bottom: $safeBottom;
+  }
+  &.bottom-center{
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translate(-50%,0%);
+      margin-bottom: $safeBottom;
+  }
+  &.top-center{
+    position: fixed;
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin-top: $safeTop;
+  }
+  &.top-left {
+    position: fixed;
+    top: 72px;
+    left: 16px;
+    z-index: 100;
+    margin-top: $safeTop;
+  }
+  &.top-right {
+    position: fixed;
+    top: 72px;
+    right: 16px;
+    z-index: 100;
+    margin-top: $safeTop;
+  }
+
+  &.top-right,
+  &.bottom-right{
+      .dropdown-menu{
+          .dropdown-item{
+              p{
+                  left: auto;
+                  right: 58px;
+              }
+          }
+      }
+  }
+}

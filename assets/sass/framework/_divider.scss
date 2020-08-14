@@ -1,0 +1,22 @@
+.divider{
+    height: 1px;
+    background: $colorLine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-box{
+        background: $colorLine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        border-radius: 100%;
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+    }
+    &.inset{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

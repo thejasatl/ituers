@@ -1,0 +1,188 @@
+.appHeader {
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: $safeTop;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #FFF;
+  color: $colorHeading;
+  box-shadow: $boxShadow;
+  &:before{
+    content: '';
+    height: $safeTop;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99999;
+    background: $colorPrimary;
+  }
+  &.no-border {
+    border: 0;
+    box-shadow: none;
+  }
+  &.transparent {
+    background: transparent;
+    box-shadow: none;
+  }
+  .left,
+  .right {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    i.icon,
+    ion-icon {
+      font-size: 26px;
+      --ionicon-stroke-width: 36px;
+    }
+    .headerButton {
+      min-width: 36px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      color: $colorHeading;
+      position: relative;
+      .btn {
+        font-size: 16px;
+        height: 32px;
+        padding: 0px 14px;
+        font-weight: $regular;
+      }
+      &:active {
+        opacity: 0.6;
+      }
+    }
+  }
+  .left {
+    left: 8px;
+    top: 0;
+  }
+  .right {
+    right: 8px;
+    top: 0;
+  }
+  .pageTitle {
+    font-size: $fontSizeHeading;
+    font-weight: $medium;
+    padding: 0 10px;
+    .logo {
+      max-height: 18px;
+    }
+  }
+  &.text-light {
+    color: #fff;
+    .headerButton,
+    .pageTitle{
+      color: #fff;
+    }
+  }
+  &.bg-primary,
+  &.bg-secondary,
+  &.bg-success,
+  &.bg-warning,
+  &.bg-danger,
+  &.bg-info,
+  &.bg-light,
+  &.bg-dark {
+    border: 0;
+  }
+}
+
+.extraHeader {
+  position: fixed;
+  left: 0;
+  top: 56px;
+  height: 56px;
+  right: 0;
+  width: 100%;
+  padding: 5px 16px;
+  margin-top: $safeTop;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: $boxShadow;
+}
+
+.header-large-title {
+  padding: 0 16px;
+  .title {
+    margin: 4px 0 0 0;
+    font-size: $fontSizeHeadingXLarge;
+    letter-spacing: -0.02em;
+    line-height: 1.3em;
+  }
+  .subtitle{
+    font-size: $fontSizeHeading;
+    font-weight: $regular;
+    margin: 6px 0 0 0;
+    color: $colorHeading;
+    line-height: 1.6em;
+  }
+}
+
+.appHeader.scrolled {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  height: 0;
+  transition: 0.1s all;
+  .pageTitle {
+    opacity: 0;
+  }
+  &.is-active {
+    background: #FFF;
+    min-height: 56px;
+    border-bottom-color: $colorLine;
+    box-shadow: $boxShadow;
+    .pageTitle {
+      opacity: 1;
+    }
+  }
+  
+}
+
+
+@mixin appHeaderColored($color) {
+  background: transparent !important;
+  border-bottom: 0 !important;
+  .headerButton{
+    color: $color;
+  }
+  &.is-active{
+    background: $color !important;
+    .headerButton{
+      color: #FFF !important;
+    }
+  }
+}
+
+.appHeader.scrolled.bg-primary{
+  @include appHeaderColored($colorPrimary);
+}
+.appHeader.scrolled.bg-secondary{
+  @include appHeaderColored($colorSecondary);
+}
+.appHeader.scrolled.bg-success{
+  @include appHeaderColored($colorSuccess);
+}
+.appHeader.scrolled.bg-danger{
+  @include appHeaderColored($colorDanger);
+}
+.appHeader.scrolled.bg-warning{
+  @include appHeaderColored($colorWarning);
+}
+.appHeader.scrolled.bg-info{
+  @include appHeaderColored($colorInfo);
+}
+.appHeader.scrolled.bg-dark{
+  @include appHeaderColored(#000);
+}

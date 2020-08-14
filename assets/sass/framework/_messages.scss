@@ -1,0 +1,94 @@
+.message-divider{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    color: $colorLight;
+}
+.message-item{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2px 16px;
+    margin-right: 60px;
+    .bubble{
+        padding: 10px 16px;
+        background: #FFF;
+        border-radius: 16px 16px 16px 0;
+        box-shadow: $boxShadow;
+        color: $colorHeading;
+        display: inline-block;
+        margin-top: 4px;
+        line-height: 1.4em;
+        .imaged{
+            margin: 0px -6px;
+        }
+    }
+    .title{
+        font-size: 12px;
+        font-weight: $medium;
+        color: $colorText;
+        line-height: 1.2em;
+        padding: 0 0 0 10px;
+    }
+    .footer{
+        font-size: 12px;
+        padding: 0 10px;
+        text-align: right;
+        line-height: 1em;
+        margin-top: 5px;
+        color: $colorHeading;
+        opacity: .4;
+        height: 14px;
+    }
+    .avatar{
+        margin-right: 10px;
+        width: 32px;
+        height: auto;
+        border-radius: 100%;
+        margin-bottom: 18px;
+    }
+    &.user{
+        justify-content: flex-end;
+        margin-right: 0;
+        margin-left: 60px;
+        .bubble{
+            background: $colorPrimary;
+            color: #FFF;
+            border-radius: 16px 16px 0 16px;
+        }
+    }
+}
+
+.chatFooter{
+    min-height: 56px;
+    background: #FFF;
+    border-top: 1px solid $colorLine;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: $safeBottom;
+    .form-group{
+        width: calc(100% - 100px);
+        .form-control{
+            font-size: $fontSizeSub;
+            border-radius: 300px;
+            height: 40px;
+        }
+        .clear-input{
+            height: 40px;
+        }
+    }
+    form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

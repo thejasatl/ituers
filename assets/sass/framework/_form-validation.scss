@@ -1,0 +1,129 @@
+.needs-validation.was-validated {
+  .form-group.basic,
+  .form-group.boxed {
+    .invalid-feedback,
+    .valid-feedback {
+      height: 16px;
+      font-size: 11px;
+      line-height: 1.4em;
+      margin-top: 4px;
+    }
+    .invalid-feedback {
+      color: $colorDanger;
+    }
+    .valid-feedback {
+      color: $colorSuccess;
+    }
+    .clear-input {
+      bottom: 20px;
+    }
+  }
+}
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: $colorSuccess;
+  box-shadow: 0 !important;
+  background-image: none !important;
+}
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: $colorSuccess;
+  box-shadow: none !important;
+}
+.custom-select.is-valid,
+.was-validated .custom-select:valid {
+  border-color: $colorSuccess;
+}
+.custom-select.is-valid:focus,
+.was-validated .custom-select:valid:focus {
+  border-color: $colorSuccess;
+  box-shadow: none !important;
+}
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: $colorSuccess;
+}
+.custom-control-input.is-valid ~ .custom-control-label,
+.was-validated .custom-control-input:valid ~ .custom-control-label {
+  color: $colorSuccess;
+}
+.custom-control-input.is-valid ~ .custom-control-label::before,
+.was-validated .custom-control-input:valid ~ .custom-control-label::before {
+  border-color: $colorSuccess;
+}
+.custom-control-input.is-valid:checked ~ .custom-control-label::before,
+.was-validated .custom-control-input:valid:checked ~ .custom-control-label::before {
+  border-color: $colorSuccess;
+  background-color: $colorSuccess;
+}
+
+.custom-control-input.is-valid:focus ~ .custom-control-label::before,
+.was-validated .custom-control-input:valid:focus ~ .custom-control-label::before {
+  box-shadow: none !important;
+}
+
+.custom-control-input.is-valid:focus:not(:checked) ~ .custom-control-label::before,
+.was-validated .custom-control-input:valid:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: $colorSuccess;
+}
+
+.custom-file-input.is-valid ~ .custom-file-label,
+.was-validated .custom-file-input:valid ~ .custom-file-label {
+  border-color: $colorSuccess;
+}
+
+.custom-file-input.is-valid:focus ~ .custom-file-label,
+.was-validated .custom-file-input:valid:focus ~ .custom-file-label {
+  border-color: $colorSuccess;
+  box-shadow: none !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: $colorDanger;
+  background-image: none !important;
+}
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: $colorDanger;
+  box-shadow: none !important;
+}
+.custom-select.is-invalid,
+.was-validated .custom-select:invalid {
+  border-color: $colorDanger;
+}
+.custom-select.is-invalid:focus,
+.was-validated .custom-select:invalid:focus {
+  border-color: $colorDanger;
+  box-shadow: none !important;
+}
+.form-check-input.is-invalid ~ .form-check-label,
+.was-validated .form-check-input:invalid ~ .form-check-label {
+  color: $colorDanger;
+}
+.custom-control-input.is-invalid ~ .custom-control-label,
+.was-validated .custom-control-input:invalid ~ .custom-control-label {
+  color: $colorDanger;
+}
+.custom-control-input.is-invalid ~ .custom-control-label::before,
+.was-validated .custom-control-input:invalid ~ .custom-control-label::before {
+  border-color: $colorDanger;
+}
+.custom-control-input.is-invalid:checked ~ .custom-control-label::before,
+.was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before {
+  border-color: $colorDanger;
+  background-color: $colorDanger;
+}
+.custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before,
+.was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: $colorDanger;
+}
+.custom-file-input.is-invalid ~ .custom-file-label,
+.was-validated .custom-file-input:invalid ~ .custom-file-label {
+  border-color: $colorDanger;
+}
+.custom-file-input.is-invalid:focus ~ .custom-file-label,
+.was-validated .custom-file-input:invalid:focus ~ .custom-file-label {
+  border-color: $colorDanger;
+  box-shadow: none !important;
+}

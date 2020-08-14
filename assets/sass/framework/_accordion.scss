@@ -1,0 +1,100 @@
+@function svg-bg-color($color) {
+  @return '%23' + str-slice('#{$color}', 2, -1)
+}
+.accordion {
+  border-top: 1px solid $colorLine;
+  border-bottom: 1px solid $colorLine;
+  background: #fff;
+  
+  .accordion-content {
+    padding: 8px 16px 20px 16px;
+  }
+  .accordion-header {
+    position: relative;
+    .btn {
+      justify-content: flex-start !important;
+      border-radius: 0 !important;
+      width: 100%;
+      text-align: left !important; 
+      font-weight: $regular;
+      background: transparent !important;
+      font-size: $fontSize;
+      padding: 8px 50px 8px 16px;
+      min-height: 50px;
+      &:active {
+        background: rgba($colorLine, 0.3) !important;
+      }
+      &:after {
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='10px' height='16px' viewBox='0 0 10 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Listview' transform='translate(-112.000000, -120.000000)' stroke='#{svg-bg-color($colorLight)}' stroke-width='2.178'%3E%3Cpolyline id='Path' points='114 122 120 128 114 134'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        content: "";
+        font-family: "Line Awesome Free";
+        width: 20px;
+        height: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        position: absolute;
+        right: 10px;
+        color: $colorLight;
+        line-height: 1em;
+        height: 18px;
+        top: 50%;
+        opacity: .5;
+        margin-top: -9px;
+        transform: rotate(-90deg);
+      }
+      &:before {
+        content: "";
+        display: block;
+        height: 1px;
+        background: transparent;
+        position: absolute;
+        left: 16px;
+        bottom: 0;
+        right: 0;
+      }
+      &.collapsed {
+        &:after {
+          transform: rotate(90deg);
+        }
+        &:before {
+          background: $colorLine;
+        }
+      }
+      i.icon,
+      ion-icon {
+        width: 24px;
+        font-size: 24px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .item:last-child {
+    .accordion-header .btn:before {
+      display: none;
+    }
+  }
+}
+
+.inset {
+  .accordion {
+    border-radius: $borderRadius;
+    border: 1px solid $colorLine;
+    .item {
+      &:first-child {
+        .btn {
+          border-radius: $borderRadius $borderRadius 0 0 !important;
+        }
+      }
+      &:last-child {
+        .btn {
+          border-radius: 0 0 $borderRadius $borderRadius !important;
+        }
+      }
+    }
+  }
+}

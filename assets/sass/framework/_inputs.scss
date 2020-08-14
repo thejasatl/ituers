@@ -1,0 +1,248 @@
+textarea,
+.form-control {
+  background-clip: padding-box;
+  background-image: linear-gradient(transparent, transparent);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-group {
+  width: 100%;
+  .label {
+    font-size: $fontSizeCaption;
+    margin: 0;
+    font-weight: $medium;
+    color: $colorHeading;
+    display: block;
+    line-height: 1.2em;
+    text-align: left;
+  }
+  textarea {
+    resize: none;
+  }
+  .input-info {
+    font-size: $fontSizeCaption;
+    color: $colorLight;
+  }
+  .clear-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $colorText;
+    height: 38px;
+    font-size: 22px;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 32px;
+    opacity: 0.5;
+    display: none;
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  .input-wrapper {
+    position: relative;
+    &.not-empty {
+      .clear-input {
+        display: flex;
+      }
+    }
+    &.active {
+      .label {
+        color: $colorPrimary !important;
+      }
+    }
+  }
+}
+
+.form-group.basic {
+  padding: 8px 0;
+  margin: 0;
+  .form-control,
+  .custom-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorLine;
+    padding: 0 30px 0 0;
+    border-radius: 0;
+    height: 40px;
+    color: $colorHeading;
+    font-size: $fontSize;
+    &:focus {
+      border-bottom-color: $colorPrimary;
+      box-shadow: inset 0 -1px 0 0 $colorPrimary;
+    }
+  }
+  textarea.form-control {
+    height: auto;
+    padding: 7px 40px 7px 0;
+  }
+}
+.form-group.basic.animated {
+  .label {
+    margin-top: 20px;
+    opacity: 0;
+    top: -3px;
+    transition: 0.2s all;
+    position: absolute;
+  }
+  .input-wrapper {
+    padding-top: 5px;
+    &.not-empty {
+      .label {
+        margin-top: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.form-group.boxed {
+  margin: 0;
+  padding: 8px 0;
+  .form-control {
+    background: #fff;
+    box-shadow: none;
+    height: 42px;
+    border-radius: $borderRadius;
+    padding: 0 40px 0 16px;
+    &:focus {
+      border-color: $colorPrimary;
+    }
+  }
+  textarea.form-control {
+    height: auto;
+    padding: 7px 40px 7px 16px;
+  }
+  .clear-input {
+    right: 0;
+    height: 42px;
+    width: 40px;
+  }
+  .label {
+    margin-bottom: 8px;
+  }
+}
+
+.input-group {
+  .input-group-text {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $colorLine;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: $regular;
+    color: $colorHeading;
+    height: 40px;
+    width: auto;
+    padding: 0 10px 0 0;
+  }
+}
+
+.custom-file-upload {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 220px;
+  input[type="file"] {
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  label {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: rgba($colorLine, 0.2);
+    background-size: 45px 58px;
+    border: 1px solid $colorLine;
+    border-radius: $borderRadius;
+    margin: 0;
+    span {
+      display: block;
+      font-size: $fontSize;
+      color: $colorLight;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      font-weight: $medium;
+      transform: translate(0%, -50%);
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      width: 100%;
+      text-align: center;
+      border-radius: 0;
+      i.icon,
+      ion-icon {
+        --ionicon-stroke-width: 32px;
+        font-size: 48px;
+        color: $colorLight;
+      }
+      strong {
+        display: block;
+        font-weight: $medium;
+      }
+      i {
+        font-style: normal;
+        display: block;
+      }
+    }
+    &.file-uploaded {
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: "";
+        width: 38px;
+        height: 38px;
+        background: $colorSuccess;
+        border-radius: 100%;
+        display: flex;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='23px' height='20px' viewBox='0 0 23 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline id='Path' stroke='%23FFFFFF' stroke-width='2.4' points='21.2 2 7.76 18 2 12'%3E%3C/polyline%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        left: 50%;
+        top: calc(50% + -22px);
+        box-shadow: $boxShadow;
+        transform: translate(-50%, -50%);
+      }
+      label {
+        border-color: transparent;
+      }
+      span {
+        bottom: 0;
+        left: 0;
+        top: auto;
+        transform: translate(0, 0);
+        font-size: $fontSizeCaption;
+        color: $colorText;
+        background-color: $colorLine;
+      }
+    }
+  }
+}
+
+.verify-input {
+  height: 72px !important;
+  font-size: 32px;
+  font-weight: $bold;
+  color: $colorHeading;
+  letter-spacing: 5px;
+  padding: 0 0 0 5px !important;
+  max-width: 190px;
+  margin: auto;
+  text-align: center !important;
+}

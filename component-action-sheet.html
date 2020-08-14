@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="javascript:;" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Action Sheet</div>
+        <div class="right"></div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section full mt-2">
+            <div class="section-title">Default Action Sheet</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheet">Default</button>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheetInset">Inset</button>
+                </p>
+                Make any action sheet inset adding <code>.inset</code>.
+            </div>
+        </div>
+
+        <!-- Default Action Sheet -->
+        <div class="modal fade action-sheet" id="actionSheet" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Action Sheet Title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="action-button-list">
+                            <li>
+                                <a href="#" class="btn btn-list text-primary" data-dismiss="modal">
+                                    <span>Open</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>Delete</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>Copy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>Share</span>
+                                </a>
+                            </li>
+                            <li class="action-divider"></li>
+                            <li>
+                                <a href="#" class="btn btn-list text-danger" data-dismiss="modal">
+                                    <span>Close</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Default Action Sheet -->
+
+        <!-- Default Action Sheet Inset -->
+        <div class="modal fade action-sheet inset" id="actionSheetInset" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Action Sheet Title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="action-button-list">
+                            <li>
+                                <a href="#" class="btn btn-list text-primary" data-dismiss="modal">
+                                    <span>Open</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>Delete</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>Copy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>Share</span>
+                                </a>
+                            </li>
+                            <li class="action-divider"></li>
+                            <li>
+                                <a href="#" class="btn btn-list text-danger" data-dismiss="modal">
+                                    <span>Close</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Default Action Sheet Inset -->
+
+        <div class="section full mt-2">
+            <div class="section-title">Iconed Action Sheet</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>Use them with icons</p>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheetIconed">Show</button>
+            </div>
+        </div>
+
+        <!-- Iconed Action Sheet -->
+        <div class="modal fade action-sheet" id="actionSheetIconed" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Action Sheet Title</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="action-button-list">
+                            <li>
+                                <a href="#" class="btn btn-list text-primary" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="document-outline"></ion-icon>
+                                        Open
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                        Delete
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="copy-outline"></ion-icon>
+                                        Copy
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="share-outline"></ion-icon>
+                                        Share
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="action-divider"></li>
+                            <li>
+                                <a href="#" class="btn btn-list text-danger" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="close-outline"></ion-icon>
+                                        Close
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Iconed Action Sheet -->
+
+
+
+        <div class="section full mt-2">
+            <div class="section-title">Share Example</div>
+            <div class="wide-block pt-2 pb-2">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheetShare">Share (List)</button>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheetShareBox">Share (Box)</button>
+            </div>
+        </div>
+
+
+        <!-- Share Action Sheet -->
+        <div class="modal fade action-sheet inset" id="actionSheetShare" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Share with</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="action-button-list">
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                        Facebook
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        Twitter
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                        Instagram
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-list" data-dismiss="modal">
+                                    <span>
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                        Linkedin
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Share Action Sheet -->
+
+        <!-- Share Action Sheet -->
+        <div class="modal fade action-sheet inset" id="actionSheetShareBox" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Share with</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content text-center">
+                            <div class="row">
+                                <div class="col-2">
+                                    <a href="#" class="btn btn-icon btn-facebook" data-dismiss="modal">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#" class="btn btn-icon btn-twitter" data-dismiss="modal">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#" class="btn btn-icon btn-linkedin" data-dismiss="modal">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#" class="btn btn-icon btn-instagram" data-dismiss="modal">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#" class="btn btn-icon btn-whatsapp" data-dismiss="modal">
+                                        <ion-icon name="logo-whatsapp"></ion-icon>
+                                    </a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="#" class="btn btn-icon btn-twitch" data-dismiss="modal">
+                                        <ion-icon name="logo-twitch"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Share Action Sheet -->
+
+        <div class="section full mt-2">
+            <div class="section-title">Form Action Sheet</div>
+            <div class="wide-block pt-2 pb-2">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheetForm">Show</button>
+            </div>
+        </div>
+
+        <!-- Form Action Sheet -->
+        <div class="modal fade action-sheet" id="actionSheetForm" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Please Sign In to Continue</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form>
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label class="label" for="name3">Name</label>
+                                        <input type="text" class="form-control" id="name3"
+                                            placeholder="Enter your name">
+                                        <i class="clear-input">
+                                            <ion-icon name="close-circle"></ion-icon>
+                                        </i>
+                                    </div>
+                                    <div class="input-info">Enter your full name</div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label class="label" for="password3">Password</label>
+                                        <input type="password" class="form-control" id="password3"
+                                            placeholder="Type a password">
+                                        <i class="clear-input">
+                                            <ion-icon name="close-circle"></ion-icon>
+                                        </i>
+                                    </div>
+                                    <div class="input-info">Your password must be between 8 to 16 chars</div>
+                                </div>
+                                <div class="form-group basic">
+                                    <button type="button" class="btn btn-secondary btn-block btn-lg"
+                                        data-dismiss="modal">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Form Action Sheet -->
+
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">Content Example</div>
+            <div class="wide-block pt-2 pb-2">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#actionSheetContent">Show</button>
+            </div>
+        </div>
+
+        <!-- Content Action Sheet -->
+        <div class="modal fade action-sheet" id="actionSheetContent" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Action Sheet Content</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum, urna eget
+                                finibus fermentum, velit metus maximus erat, nec sodales elit justo vitae sapien. Sed
+                                fermentum varius erat, et dictum lorem. Cras pulvinar vestibulum purus sed hendrerit.
+                                Praesent et auctor dolor. Ut sed ultrices justo. Fusce tortor erat, scelerisque sit amet
+                                diam rhoncus, cursus dictum lorem. Ut vitae arcu egestas, congue nulla at, gravida
+                                purus.
+                            </p>
+                            <a href="#" class="btn btn-secondary btn-block btn-lg" data-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Content Action Sheet -->
+
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="javascript:;" class="item" data-toggle="modal" data-target="#sidebarPanel">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                        </div>
+                        <div class="in">
+                            <strong>Julian Gruber</strong>
+                            <div class="text-muted">
+                                <ion-icon name="location"></ion-icon>
+                                California
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Discover
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-components.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Components
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-pages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Pages</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Chat</div>
+                                    <span class="badge badge-danger">5</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="moon-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div>Dark Mode</div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input dark-mode-switch"
+                                            id="darkmodesidebar">
+                                        <label class="custom-control-label" for="darkmodesidebar"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="listview-title mt-2 mb-1">
+                        <span>Friends</span>
+                    </div>
+                    <ul class="listview image-listview flush transparent no-line">
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sophie Asveld</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Sebastian Bennett</div>
+                                    <span class="badge badge-danger">6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Beth Murphy</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Amelia Cabal</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-chat.html" class="item">
+                                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div>Henry Doe</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- sidebar buttons -->
+                <div class="sidebar-buttons">
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="archive-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </a>
+                    <a href="javascript:;" class="button">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- * sidebar buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  color: $colorText;
+  background: $colorBackground;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// close all the scroll bars
+::-webkit-scrollbar {
+  width: 0;
+}
+
+// Selection color
+::selection {
+  background: rgba($colorPrimary, 0.3);
+}
+
+// default link options
+a {
+  transition: 0.2s all;
+  color: $colorPrimary;
+  outline: 0 !important;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0 !important;
+    color: $colorPrimary;
+    text-decoration: none;
+  }
+}
+button {
+  outline: 0 !important;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0 !important;
+  }
+}
+
+// Safearea
+$safeBottom: env(safe-area-inset-bottom);
+$safeTop: env(safe-area-inset-top);

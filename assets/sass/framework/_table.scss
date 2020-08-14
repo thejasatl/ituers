@@ -1,0 +1,42 @@
+.table {
+    color: $colorText;
+    margin: 0;
+    font-size: $fontSizeSub;
+    line-height: 1.4em;
+    thead {
+      th {
+        border-top: 0;
+        border-bottom: 0;
+        color: $colorHeading;
+        font-weight: $medium;
+      }
+    }
+    td,
+    th {
+      border-top: 1px solid $colorLine;
+    }
+  }
+  .table-dark {
+    border-radius: 0px;
+    thead {
+      th {
+        color: #fff;
+        border-top: 0;
+      }
+    }
+    td,
+    th {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255,255,255,.7)
+    }
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background: rgba($colorLine, 0.4);
+  }
+  .table-bordered {
+    border-radius: 0px;
+    td,
+    th {
+      border-color: $colorLine;
+    }
+  }

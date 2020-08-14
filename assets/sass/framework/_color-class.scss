@@ -1,0 +1,153 @@
+.bg-primary{
+    background: $colorPrimary !important;
+    color: #FFF;
+}
+.bg-secondary{
+    background: $colorSecondary !important;
+    color: #FFF;
+}
+.bg-success{
+    background: $colorSuccess !important;
+    color: #FFF;
+}
+.bg-danger{
+    background: $colorDanger !important;
+    color: #FFF;
+}
+.bg-warning{
+    background: $colorWarning !important;
+    color: #FFF;
+}
+.bg-info{
+    background: $colorInfo !important;
+    color: #FFF;
+}
+.bg-light{
+    background: rgba(255,255,255,.5) !important;
+}
+.bg-dark{
+    background: #222 !important;
+    color: #FFF;
+}
+
+a.bg-primary{
+    background: $colorPrimary !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken($colorPrimary, 5%) !important;
+    }
+}
+a.bg-secondary{
+    background: $colorSecondary !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken($colorSecondary, 5%) !important;
+    }
+}
+a.bg-success{
+    background: $colorSuccess !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken($colorSuccess, 5%) !important;
+    }
+}
+a.bg-danger{
+    background: $colorDanger !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken($colorDanger, 5%) !important;
+    }
+}
+a.bg-warning{
+    background: $colorWarning !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken($colorWarning, 5%) !important;
+    }
+}
+a.bg-info{
+    background: $colorInfo !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken($colorInfo, 5%) !important;
+    }
+}
+a.bg-light{
+    background: rgba(255,255,255,.5) !important;
+    &:hover,
+    &:active{
+        background:darken(rgba(255,255,255,.5), 5%) !important;
+    }
+}
+a.bg-dark{
+    background: #222 !important;
+    color: #FFF !important;
+    &:hover,
+    &:active{
+        background:darken(#222, 5%) !important;
+    }
+}
+
+.text-primary,
+a.text-primary{
+    color: $colorPrimary !important;
+}
+.text-secondary,
+a.text-secondary{
+    color: $colorSecondary !important;
+}
+.text-success,
+a.text-success{
+    color: $colorSuccess !important;
+}
+.text-danger,
+a.text-danger{
+    color: $colorDanger !important;
+}
+.text-warning,
+a.text-warning{
+    color: $colorWarning !important;
+}
+.text-info,
+a.text-info{
+    color: $colorInfo !important;
+}
+.text-light,
+a.text-light{
+    color: #FFF !important;
+}
+.text-dark,
+a.text-dark{
+    color: $colorHeading !important;
+}
+
+.border-primary{
+    border-color: $colorPrimary !important;
+}
+.border-secondary{
+    border-color: $colorSecondary !important;
+}
+.border-success{
+    border-color: $colorSuccess !important;
+}
+.border-danger{
+    border-color: $colorDanger !important;
+}
+.border-warning{
+    border-color: $colorWarning !important;
+}
+.border-info{
+    border-color: $colorInfo !important;
+}
+.border-light{
+    border-color: #FFF !important;
+}
+.border-dark{
+    border-color: $colorHeading !important;
+}

@@ -1,0 +1,26 @@
+#loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loading-icon{
+        width: 42px;
+        height: auto;
+        animation: loadingAnimation 1s infinite;
+    }
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }

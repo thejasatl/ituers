@@ -1,0 +1,175 @@
+
+.profileBox{
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: $colorPrimary;
+  box-shadow: $boxShadow;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  margin-top: $safeTop;
+  right: 0;
+  &:before{
+    background: $colorPrimary; // do not forget to change this background color if you change profilebox
+    content: '';
+    height: $safeTop;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .image-wrapper {
+    margin-right: 16px;
+    padding: 16px 0;
+    .imaged{
+      width: 42px;
+      height: 42px;
+      border: 2px solid #FFF;
+      box-shadow: $boxShadow;
+    }
+  }
+  .in {
+    line-height: 1.4em;
+    padding: 16px 25px 16px 0;
+    strong {
+      display: block;
+      font-weight: $medium;
+      color: #FFF;
+    }
+    .text-muted {
+      font-size: 14px;
+      color: rgba(255,255,255,.5) !important;
+    }
+  }
+}
+.sidebar-buttons{
+  background: #FFF;
+  border-top: 1px solid $colorLine;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: $safeBottom;
+  .button{
+    float: 1;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: $colorHeading;
+    &:hover,
+    &:active{
+      background: rgba($colorLine, .2);
+    }
+  }
+  &:last-child{
+    border-right-color: transparent;
+  }
+}
+.close-sidebar-button{
+  font-size: 22px;
+  position: absolute;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  height: 36px;
+  right: 10px;
+  top: 50%;
+  color: rgba(255,255,255,.5) !important;
+  margin-top: -18px;
+  &:active{
+    background: rgba(255,255,255,.1);
+  }
+}
+
+.action-group{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 16px 10px 16px;
+  background: $colorPrimary;
+  .action-button{
+    padding: 10px 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: $fontSizeCaption;
+    line-height: 1em;
+    color: rgba(255,255,255,.7);
+    .iconbox{
+      background: rgba(#000, .3);
+      width: 38px;
+      height: 38px;
+      margin: 0 auto 8px auto;
+      border-radius: 100%;
+      font-size: 18px;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &:last-child{
+      border-right: 0;
+    }
+  }
+}
+#sidebarPanel{
+  .modal-dialog{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .modal-body{
+    margin-top: 76px; // Delete this if you do not use profilebox in sidebar
+    margin-bottom: 80px;
+  }
+  .modal-content{
+    width: 300px;
+    padding-top: $safeTop;
+  }
+}
+.panelbox-left,
+.panelbox-right{
+  .listview{
+    > li{
+      padding: 10px 16px;
+    }
+  }
+  .link-listview{
+    > li{
+      padding: 0;
+      a{
+        padding: 10px 36px 10px 16px;
+      }
+    }
+  }
+  .image-listview{
+    > li{
+      padding: 0;
+      .item{
+        padding: 10px 16px;
+      }
+      a.item{
+        padding-right: 36px;
+      }
+    }
+  }
+}
+.sidebar-close{
+  position: absolute;
+  right: 10px;
+}

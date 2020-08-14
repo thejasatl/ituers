@@ -1,0 +1,115 @@
+.search-form {
+  display: block;
+  width: 100%;
+}
+.searchbox {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .form-control {
+    height: 36px;
+    border-radius: $borderRadius;
+    border: 1px solid $colorLine !important;
+    padding: 0 16px 0 36px;
+    font-size: $fontSize;
+    box-shadow: none !important;
+    color: $colorHeading;
+    &:focus {
+      border-color: darken($colorLine, 10%) !important;
+      & ~ .input-icon {
+        color: $colorHeading;
+      }
+    }
+  }
+  i.icon,
+  ion-icon {
+    font-size: 26px;
+    line-height: 1em;
+    margin: 0;
+  }
+  .close {
+    opacity: 1;
+    color: $colorLight;
+    width: 46px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    top: 0;
+  }
+  .input-icon {
+    font-size: 26px;
+    position: absolute;
+    left: 0px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $colorLight;
+    top: 0;
+  }
+}
+
+#search {
+  display: block;
+  padding: 0;
+  background: #fff;
+  border-bottom: 1px solid #FFF;
+  position: fixed;
+  box-shadow: $boxShadow;
+  left: 0;
+  top: -50%;
+  right: 0;
+  width: 100%;
+  z-index: 1001;
+  transition: 0.2s all ease-in-out;
+  &.show {
+    top: $safeTop;
+    transition: 0.3s all;
+  }
+  .searchbox {
+    .form-control {
+      box-shadow: none !important;
+      border: 0 !important;
+      border-radius: 0;
+      height: 56px;
+      padding: 0 56px 0 56px;
+      background: transparent;
+      font-size: $fontSizeHeading;
+      color: $colorHeading;
+      width: 100%;
+      &:focus {
+        border-color: darken($colorLine, 15%);
+        & ~ .input-icon {
+          color: $colorHeading;
+        }
+      }
+    }
+    .input-icon {
+      font-size: 26px;
+      position: absolute;
+      left: 8px;
+      width: 46px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorLight;
+      top: 0;
+    }
+  }
+}
+
+.search-result{
+  li > .item,
+  li > a{
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+}

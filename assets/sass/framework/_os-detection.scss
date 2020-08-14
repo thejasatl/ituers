@@ -1,0 +1,9 @@
+.windowsphone-detection,
+.ios-detection,
+.android-detection,
+.non-mobile-detection {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}

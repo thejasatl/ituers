@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>ITUSBS ADMIN</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="manifest" href="__manifest.json">
+    
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+  <!-- App Header -->
+  <div class="appHeader bg-primary text-light">
+    <div class="left">
+        <a href="javascript:;" class="headerButton goBack">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+        </a>
+    </div>
+    <div class="pageTitle">Booking Service Info</div>
+    <div class="right"></div>
+</div>
+<!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+       
+    <p style="font-size: 16px; color: red;" align="center"></p>
+            <div class="section mt-2 mb-5">
+                <form action="app-pages.html">
+                <div class="form-group boxed">
+                        <div class="input-wrapper">
+                                                 Service Number
+                            <input type="name" class="form-control" id="name1"  value="<?php echo substr($responseData["_id"], 14); ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Customer Name
+                            <input type="name" class="form-control" id="name1" value="<?php echo $responseData["name"]; ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Unit Model
+                            <input type="name" class="form-control" id="name1" value="<?php echo $responseData["unitModel"]; ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Serial Number
+                            <input type="name" class="form-control" id="name1" value="<?php echo $responseData["serialNumber"]; ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Hour Meter
+                            <input type="name" class="form-control" id="name1" value="<?php echo $responseData["hourMeter"]; ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Location
+                            <input type="name" class="form-control" id="name1"value="<?php echo $responseData["location"]; ?>" disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Branch Support
+                            <input type="name" class="form-control" id="name1"value="branchsupport"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Issue
+                            <input type="name" class="form-control" id="name1" value="<?php echo $responseData["issue"]; ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">Machanic Name
+                            <input type="name" class="form-control" id="name1" value="<?php echo $responseData["mechanicName"]; ?>"disabled>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <br>
+                    STATUS : <font color="red"><b>
+                    <?php echo $responseData["status"]; ?></b></font><br><br>
+                   
+                    
+                
+                    
+                    
+                    <a href="update.html">
+                    <button type="button" class="btn btn-primary mr-1 mb-1">
+                        Update Status
+
+                    </button></a>
+                    <div class="section full mt-2">
+                        <div class="section-title">History</div>
+                        <?php foreach ($responseData["info"] as $comments) { ?>
+                        <div class="wide-block">
+                            <!-- timeline -->
+                            <div class="timeline">
+                                <div class="item">
+                                    <div class="dot"></div>
+                                    <div class="content">
+                                        <h4 class="title">STAUS : <?php echo $comments["status"]; ?></h4>
+                                        <div class="text">DATE : <?php echo $comments["date"]; ?></div><br>
+                                        <h4 class="title"><?php echo $comments["name"] == null  ? "Admin" : $comments["name"]; ?></h4>
+                                        <h4 class="title"><?php echo $comments["comment"]; ?></h4>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+                            <!-- * timeline -->
+                        </div>
+                      <?php } ?>
+                    <br><br>IMAGE<br>
+                    <!-- * Dialog Image -->
+        <div class="section full mt-2 mb-2">
+          
+            
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#DialogImage">View Image</button>
+      
+  </div>
+
+  <!-- Dialog Image -->
+  <div class="modal fade dialogbox" id="DialogImage" data-backdrop="static" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <img src="<?php echo $responseData['picture']; ?>" alt="image" class="img-fluid">
+              <div class="modal-footer">
+                  <div class="btn-inline">
+                      <a href="#" class="btn btn-text-secondary" data-dismiss="modal">CLOSE</a>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- * Dialog Image -->
+                      <img src="<?php echo $responseData['picture']; ?>" height="400px" width="200px" alt="No Image"> 
+                      </div>
+                      
+        
+
+
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- * App Capsule -->
+
+
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+  
+
+
+</body>
+
+</html>
